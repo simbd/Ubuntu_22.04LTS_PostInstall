@@ -30,6 +30,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
     	$(chkDef "FALSE") "$CA_DILLO" "$CD_DILLO" \
     	$(chkDef "FALSE") "$CA_EOLIE" "$CD_EOLIE" \
     	$(chkDef "FALSE") "$CA_FALKON" "$CD_FALKON" \
+	$(chkDef "TRUE") "$CA_FIREFOXDEB" "$CD_FIREFOXDEB" \
     	$(chkDef "FALSE") "$CA_FIREFOXBETA" "$CD_FIREFOXBETA" \
     	$(chkDef "FALSE") "$CA_FIREFOXDEVELOPER" "$CD_FIREFOXDEVELOPER" \
     	$(chkDef "FALSE") "$CA_FIREFOXESR" "$CD_FIREFOXESR" \
