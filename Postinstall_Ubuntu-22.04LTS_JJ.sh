@@ -51,8 +51,8 @@ then
     	f_action_install "$CA_DILLO" dillo
     	f_action_flatpak_install "$CA_EOLIE" org.gnome.Eolie
     	f_action_install "$CA_FALKON" falkon
-	f_action_exec "$CA_FIREFOX" "snap remove firefox"
- 	f_action_install "$CA_FIREFOX" "firefox firefox-locale-fr"
+	f_action_exec "$CA_FIREFOXDEB" "snap remove firefox"
+ 	f_action_install "$CA_FIREFOXDEB" "firefox firefox-locale-fr"
    	f_action_ppa_install "$CA_FIREFOXBETA" ppa:mozillateam/firefox-next "firefox firefox-locale-fr"
    	f_action_LinInstall "$CA_FIREFOXDEVELOPER" FirefoxDeveloperEdition
    	f_action_ppa_install "$CA_FIREFOXESR" ppa:mozillateam/ppa "firefox-esr firefox-esr-locale-fr"
