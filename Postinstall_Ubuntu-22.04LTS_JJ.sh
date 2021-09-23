@@ -51,6 +51,8 @@ then
     	f_action_install "$CA_DILLO" dillo
     	f_action_flatpak_install "$CA_EOLIE" org.gnome.Eolie
     	f_action_install "$CA_FALKON" falkon
+	f_action_exec "$CA_FIREFOX" "snap remove firefox"
+ 	f_action_install "$CA_FIREFOX" "firefox firefox-locale-fr"
    	f_action_ppa_install "$CA_FIREFOXBETA" ppa:mozillateam/firefox-next "firefox firefox-locale-fr"
    	f_action_LinInstall "$CA_FIREFOXDEVELOPER" FirefoxDeveloperEdition
    	f_action_ppa_install "$CA_FIREFOXESR" ppa:mozillateam/ppa "firefox-esr firefox-esr-locale-fr"
@@ -58,13 +60,13 @@ then
     	f_action_install "$CA_EPIPHANY" epiphany-browser	
     	f_RepositoryExt_Install "$CA_CHROME" "google-chrome" "https://dl-ssl.google.com/linux/linux_signing_key.pub" "[arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" "google-chrome-stable"
     	f_action_install "$CA_LYNX" lynx
-	f_action_get "$CA_EDGE" "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-dev/microsoft-edge-dev_93.0.916.1-1_amd64.deb"
+	f_action_get "$CA_EDGE" "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-dev/microsoft-edge-dev_95.0.1020.0-1_amd64.deb"
 	f_action_install "$CA_MIDORI" midori
     	f_action_snap_install "$CA_OPERA" opera
 	f_RepositoryExt_Install "$CA_PALEMOON" "home:stevenpusser" "https://download.opensuse.org/repositories/home:stevenpusser/xUbuntu_19.10/Release.key" "http://download.opensuse.org/repositories/home:/stevenpusser/xUbuntu_19.10/ /" "palemoon"
     	f_action_get "$CA_SRWAREIRON" "http://www.srware.net/downloads/iron64.deb"
     	f_action_install "$CA_TORBROWSER" torbrowser-launcher  
-    	f_action_get "$CA_VIVALDI" "https://downloads.vivaldi.com/stable/vivaldi-stable_4.0.2312.33-1_amd64.deb" #(Dépot vivaldi auto-ajouté donc soft toujours à jour)
+    	f_action_get "$CA_VIVALDI" "https://downloads.vivaldi.com/stable/vivaldi-stable_4.2.2406.48-1_amd64.deb" #(Dépot vivaldi auto-ajouté donc soft toujours à jour)
 	f_action_exec "$CA_VIVALDI" "sudo apt update && sudo apt upgrade vivaldi-stable -y" #Pour que  vivaldi soit à jour dès le départ
 	
     	# Internet / Tchat / Messagerie / Téléchargement / Contrôle à distance
@@ -73,7 +75,7 @@ then
     	f_action_install "$CA_CLUSTERSSH" clusterssh
     	f_action_get_appimage "$CA_COZYDRIVE" "https://github.com/cozy-labs/cozy-desktop/releases/download/v3.20.0/Cozy-Drive-3.20.0-x86_64.AppImage"
     	f_action_install "$CA_DELUGE" deluge
-	f_action_get "$CA_DISCORD" "https://dl.discordapp.net/apps/linux/0.0.15/discord-0.0.15.deb"
+	f_action_get "$CA_DISCORD" "https://dl.discordapp.net/apps/linux/0.0.16/discord-0.0.16.deb"
     	f_action_install "$CA_DROPBOX" nautilus-dropbox
 	f_action_get "$CA_DUKTO" "https://download.opensuse.org/repositories/home:/colomboem/xUbuntu_16.04/amd64/dukto_6.0-1_amd64.deb" #{a reverifier}
     	f_action_exec "$CA_DWSERVICE" "wget https://www.dwservice.net/download/dwagent_x86.sh && chmod +x dwagent* ; mv dwagent* ~/"
@@ -122,7 +124,7 @@ then
 	f_action_install "$CA_UGET" uget	
 	f_action_snap_install "$CA_VUZE" "vuze-vs"
 	f_action_install "$CA_WEECHAT" weechat
-	f_action_get "$CA_WHALEBIRD" "https://github.com/h3poteto/whalebird-desktop/releases/download/4.4.1/Whalebird-4.4.1-linux-x64.deb"
+	f_action_get "$CA_WHALEBIRD" "https://github.com/h3poteto/whalebird-desktop/releases/download/4.4.3/Whalebird-4.4.3-linux-x64.deb"
 	f_action_snap_install "$CA_WHATSDESK" whatsdesk
 	f_RepositoryExt_Install "$CA_WIREDESK" "wire-desktop" "http://wire-app.wire.com/linux/releases.key" "[arch=amd64] https://wire-app.wire.com/linux/debian stable main" "wire-desktop" ##PB : dépot bien ajouté mais n'installe pas les paquets
 	f_action_install "$CA_WIREDESK" apt-transport-https #dépendance
@@ -144,7 +146,7 @@ then
 	f_action_install "$CA_FEEDREADER" feedreader
 	f_action_install "$CA_FONTFORGE" "fontforge fontforge-extras"
 	f_action_snap_install "$CA_FREEMIND" freemind
-	f_action_get "$CA_FREEOFFICE" "https://www.softmaker.net/down/softmaker-freeoffice-2018_980-01_amd64.deb"
+	f_action_get "$CA_FREEOFFICE" "https://www.softmaker.net/down/softmaker-office-2021_1034-01_amd64.deb"
 	f_action_install "$CA_FREEPLANE" freeplane
 	f_action_install "$CA_GNOMEOFFICE" "abiword gnumeric dia planner glabels glom gnucash"
 	f_action_install "$CA_GNOTE" gnote
@@ -154,7 +156,7 @@ then
 	f_action_ppa_install "$CA_LIBREOFFICEFRESH" ppa:libreoffice/ppa "libreoffice libreoffice-l10n-fr libreoffice-style-breeze"
 	f_action_install "$CA_LIBREOFFICESUP" "libreoffice-style-elementary libreoffice-style-oxygen libreoffice-style-human libreoffice-style-sifr libreoffice-style-tango libreoffice-templates openclipart-libreoffice"
 	f_action_exec "$CA_LIBREOFFICESUP" "wget https://grammalecte.net/grammalecte/oxt/Grammalecte-fr-v2.1.2.oxt --no-check-certificate ; chmod +x Grammalecte*.oxt ; sudo unopkg add --shared Grammalecte*.oxt ; rm Grammalecte*.oxt"
-	f_action_get "$CA_MASTERPDFEDITOR" "https://code-industry.net/public/master-pdf-editor-5.7.60-qt5.x86_64.deb"
+	f_action_get "$CA_MASTERPDFEDITOR" "https://code-industry.net/public/master-pdf-editor-5.7.90-qt5.x86_64.deb"
 	f_action_install "$CA_MCOMIX" mcomix
 	f_action_snap_install "$CA_OFFICEWEBAPPS" "unofficial-webapp-office"
 	f_action_flatpak_install "$CA_NOTESUP" com.github.philip_scott.notes-up  
@@ -162,7 +164,7 @@ then
     	f_action_LinInstall "$CA_OPENOFFICE" OpenOffice
     	f_action_install "$CA_PANDOC" pandoc
     	f_action_install "$CA_PDFMOD" pdfmod
-	f_action_get "$CA_PDFSAM" "https://github.com/torakiki/pdfsam/releases/download/v4.2.1/pdfsam_4.2.1-1_amd64.deb"
+	f_action_get "$CA_PDFSAM" "https://github.com/torakiki/pdfsam/releases/download/v4.2.6/pdfsam_4.2.6-1_amd64.deb"
     	f_action_install "$CA_PDFSHUFFLER" pdfshuffler
     	#f_action_exec "$CA_POLICEMST" "echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo /usr/bin/debconf-set-selections ; sudo apt install ttf-mscorefonts-installer -y"
 	f_action_get "$CA_POLICEMST" "http://ftp.fr.debian.org/debian/pool/contrib/m/msttcorefonts/ttf-mscorefonts-installer_3.8_all.deb"
@@ -172,8 +174,8 @@ then
 	f_action_flatpak_install "$CA_SPICEUP" "com.github.philip_scott.spice-up"
 	f_action_install "$CA_UMBRELLO" "umbrello --no-install-recommends"
 	f_action_get "$CA_WPSOFFICE" "http://fr.archive.ubuntu.com/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_amd64.deb" 
-	f_action_get "$CA_WPSOFFICE" "https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/9719/wps-office_11.1.0.9719.XA_amd64.deb"
-	f_action_get "$CA_XMIND" "https://dl3.xmind.net/XMind-2020-for-Linux-amd-64bit-10.3.1-202101132117.deb"
+	f_action_get "$CA_WPSOFFICE" "https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/10702/wps-office_11.1.0.10702.XA_amd64.deb"
+	f_action_get "$CA_XMIND" "https://dl3.xmind.net/XMind-for-Linux-amd-64bit-11.0.1-202106220606.deb"
 	f_action_install "$CA_XOURNAL" xournal
 	f_action_install "$CA_XPAD" xpad
 	f_action_install "$CA_ZEAL" zeal
@@ -344,8 +346,8 @@ then
 	f_RepositoryExt_Install "$CA_VBOXLAST" "virtualbox" "http://download.virtualbox.org/virtualbox/debian/oracle_vbox_2016.asc" "[arch=amd64] http://download.virtualbox.org/virtualbox/debian focal contrib" "virtualbox-6.1"
     	f_action_exec "$CA_VBOXLAST" "sudo usermod -G vboxusers -a $USER"
 	f_action_exec "$CA_VMWAREHORIZON" "wget https://download3.vmware.com/software/view/viewclients/CART21FQ2/VMware-Horizon-Client-2006-8.0.0-16522670.x64.bundle && chmod +x VMware*Horizon* && sudo ./VMware-Horizon-Client*.bundle --console ; rm VMware*bundle"
-	f_action_exec "$CA_VMWARE" "sudo apt install gcc -y ; wget https://download3.vmware.com/software/player/file/VMware-Player-16.1.0-17198959.x86_64.bundle && sudo chmod +x VMware-Player*.bundle ; sudo ./VMware-Player-16.1.0-17198959.x86_64.bundle --eulas-agreed --console --required ; sudo rm VMware-Player*"
-	f_action_exec "$CA_VMWAREPRO" "sudo apt install gcc -y ; wget https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-16.1.0-17198959.x86_64.bundle && sudo chmod +x VMware-Workstation*.bundle ; sudo ./VMware-Workstation-Full-16.1.0-17198959.x86_64.bundle --eulas-agreed --console --required ; sudo rm VMware-Workstation*"
+	f_action_exec "$CA_VMWARE" "sudo apt install gcc -y ; wget https://download3.vmware.com/software/player/file/VMware-Player-16.1.2-17966106.x86_64.bundle && sudo chmod +x VMware-Player*.bundle ; sudo ./VMware-Player-16.1.0-17198959.x86_64.bundle --eulas-agreed --console --required ; sudo rm VMware-Player*"
+	f_action_exec "$CA_VMWAREPRO" "sudo apt install gcc -y ; wget https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-16.1.2-17966106.x86_64.bundle && sudo chmod +x VMware-Workstation*.bundle ; sudo ./VMware-Workstation-Full-16.1.0-17198959.x86_64.bundle --eulas-agreed --console --required ; sudo rm VMware-Workstation*"
 	f_action_install "$CA_WINE" "wine-development wine64-development wine64-development-tools winetricks"
 	
 	# Utilitaires graphiques
@@ -422,7 +424,7 @@ then
 	f_action_get "$CA_KEEWEB" "https://github.com/keeweb/keeweb/releases/download/v1.12.3/KeeWeb-1.12.3.linux.x64.deb"
 	f_action_install "$CA_MALTEGO" openjdk-14-jre #dépendance java nécessaire pour Maltego
 	f_action_get "$CA_MALTEGO" "https://maltego-downloads.s3.us-east-2.amazonaws.com/linux/Maltego.v4.2.9.12898.deb"
-	f_action_get "$CA_MYSQLWB" "https://cdn.mysql.com//Downloads/MySQLGUITools/mysql-workbench-community_8.0.19-1ubuntu19.10_amd64.deb"
+	f_action_get "$CA_MYSQLWB" "https://cdn.mysql.com//Downloads/MySQLGUITools/mysql-workbench-community_8.0.26-1ubuntu21.04_amd64.deb"
 	f_action_install "$CA_OCSINVENTORY" ocsinventory-agent
 	f_action_install "$CA_OPENVAS" "openvas openvas-cli openvas-manager openvas-scanner"
 	f_action_install "$CA_PGADMIN" pgadmin3
@@ -491,7 +493,7 @@ then
 	f_action_snap_install "$CA_INTELLIJIDEA" "intellij-idea-community --classic"
 	f_action_install "$CA_IPYTHON" ipython
 	f_action_exec "$CA_JAVA" "sudo add-apt-repository -y ppa:linuxuprising/java"
-	f_action_exec "$CA_JAVA" "echo oracle-java16-installer shared/accepted-oracle-license-v1-2 select true | sudo /usr/bin/debconf-set-selections"
+	f_action_exec "$CA_JAVA" "echo oracle-java17-installer shared/accepted-oracle-license-v1-2 select true | sudo /usr/bin/debconf-set-selections"
 	f_action_install "$CA_JAVA" oracle-java16-installer
 	f_action_install "$CA_JAVAOPENJDK8" "openjdk-8-jdk openjdk-8-jre"
 	f_action_install "$CA_JAVAOPENJDK" "openjdk-16-jdk openjdk-16-jre"
