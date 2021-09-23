@@ -1,7 +1,7 @@
 # Description (FR) pour l'installation des logiciels
 # French
 
-PIS_NAME="Ubuntu 20.04LTS"
+PIS_NAME="Ubuntu 22.04LTS"
 
 #Begin values : première boite de dialogue
 BGN_TITLE="Configuration de ${PIS_NAME}"
@@ -145,12 +145,12 @@ CD_CLUSTERSSH="Permet d'administrer plusieurs machines d'un coup via SSH"
 CA_COZYDRIVE="CozyDrive {APPIMAGE}"
 CD_COZYDRIVE="Permet de gérer votre stockage en ligne CozyCloud (Cozy.io)"
 
-CA_DELUGE="Deluge"
+CA_DELUGE="Deluge"FocalFossa
 CD_DELUGE="Client BitTorrent basé sur Python et GTK+"
 
 CA_DISCORD="Discord"
 CD_DISCORD="Logiciel propriétaire multiplateforme pour communiquer à plusieurs, orienté Gaming"
-
+FocalFossa
 CA_DROPBOX="Dropbox"
 CD_DROPBOX="Partage de fichiers dans le cloud."
 
