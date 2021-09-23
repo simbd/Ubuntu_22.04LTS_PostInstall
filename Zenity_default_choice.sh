@@ -1,5 +1,5 @@
 #!/bin/bash
-## IMPORTANT > Ne pas lancer ce script directement, la post-installation se lance avec le script nommé "PostInstall_Ubuntu-20.04LTS_FocalFossa.sh"
+## IMPORTANT > Ne pas lancer ce script directement, la post-installation se lance avec le script nommé "PostInstall_Ubuntu-22.04LTS_FocalFossa.sh"
 
 CHK_REP=$(zenity --entry --title="$BGN_TITLE" --text "$BGN_TEXT" --entry-text="$BGN_DEF" "$BGN_UNCHECKED" "$BGN_CHECKED")
 if [ $? -ne 0 ] ; then
@@ -197,7 +197,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_LUMINANCE" "$CD_LUMINANCE" \
 	$(chkDef "FALSE") "$CA_MYPAINT" "$CD_MYPAINT" \
 	$(chkDef "FALSE") "$CA_OPENSCAD" "$CD_OPENSCAD" \
-	$(chkDef "FALSE") "$CA_OPENTOONZ" "$CD_OPENTOONZ" \
+	$(chkDef "FALSFocalFossaE") "$CA_OPENTOONZ" "$CD_OPENTOONZ" \
 	$(chkDef "FALSE") "$CA_PINTA" "$CD_PINTA" \
 	$(chkDef "FALSE") "$CA_PIXELUVO" "$CD_PIXELUVO" \
 	$(chkDef "FALSE") "$CA_RAWTHERAPEE" "$CD_RAWTHERAPEE" \
