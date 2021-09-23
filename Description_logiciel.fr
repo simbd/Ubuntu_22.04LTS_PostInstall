@@ -87,6 +87,9 @@ CD_EOLIE="Un navigateur s'intégrant bien dans l'environnement Gnome"
 CA_FALKON="Falkon (anciennement Qupzilla)"
 CD_FALKON="Une alternative libre et légère utilisant Webkit, suite du projet QupZilla"
 
+CA_FIREFOXDEB="Firefox (version classique en DEB)"
+CD_FIREFOXDEB="Remplace le paquet snap de Firefox fournit par défaut par le paquet deb des dépots"
+
 CA_FIREFOXBETA="Firefox Beta (n+1) {PPA}"
 CD_FIREFOXBETA="Pour ceux qui veulent remplacer la version stable par la béta pour avoir 1 version d'avance"
 
