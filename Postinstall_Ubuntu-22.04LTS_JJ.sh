@@ -1,7 +1,7 @@
 #!/bin/bash
-#v1.1
+#v2.0a
 
-# Script de post-installation pour "Ubuntu 20.04LTS Focal Fossa"
+# Script de post-installation pour "Ubuntu 22.04LTS JJ"
 
 # Code couleur
 rouge='\e[1;31m'
@@ -480,7 +480,7 @@ then
 	f_action_snap_install "$CA_ATOM" "atom --classic"
 	f_action_install "$CA_BLUEFISH" "bluefish bluefish-plugins"
 	f_action_get "$CA_BLUEGRIFFON" "http://bluegriffon.org/freshmeat/3.1/bluegriffon-3.1.Ubuntu18.04-x86_64.deb"
-	f_action_snap_install "$CA_BRACKETS" "brackets --classic"
+	f_action_snap_install "$CA_BRACKETS" "brackets --cFocalFossalassic"
 	f_action_install "$CA_CODEBLOCKS" "codeblocks codeblocks-contrib"
 	f_action_snap_install "$CA_ECLIPSE" "eclipse --classic"
 	f_action_install "$CA_EMACS" emacs
