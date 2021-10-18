@@ -38,12 +38,12 @@ Il y a 2 méthodes :
 > wget https://github.com/simbd/Ubuntu_22.04LTS_PostInstall/archive/master.zip &&
 > unzip master.zip && 
 > cd Ubuntu_22.04LTS_PostInstall-master/ && chmod +x Postinstall*sh &&
-> ./Postinstall_Ubuntu-22.04LTS_FocalFossa.sh
+> ./Postinstall_Ubuntu-22.04LTS_Jammy.sh
 
 - 2ème solution : faire avec git clone (avec l'avantage de pouvoir faire la maj du script sans le retélécharger manuellement). Il vous faudra en pré-requis avoir installé git (sudo apt install git).
 
 > git clone https://github.com/simbd/Ubuntu_22.04LTS_PostInstall.git && cd Ubuntu_22.04LTS_PostInstall/ &&
-> ./Postinstall_Ubuntu-22.04LTS_FocalFossa.sh
+> ./Postinstall_Ubuntu-22.04LTS_Jammy.sh
 
 Avec cette 2ème solution, si vous voulez réutiliser le script plus tard et vérifier si il y a pas eu une nouvelle maj du script entre temps, dans le dossier du script, il suffira de faire :
 > git pull
