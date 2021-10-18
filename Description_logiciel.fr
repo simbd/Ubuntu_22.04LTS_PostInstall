@@ -148,12 +148,12 @@ CD_CLUSTERSSH="Permet d'administrer plusieurs machines d'un coup via SSH"
 CA_COZYDRIVE="CozyDrive {APPIMAGE}"
 CD_COZYDRIVE="Permet de gérer votre stockage en ligne CozyCloud (Cozy.io)"
 
-CA_DELUGE="Deluge"FocalFossa
+CA_DELUGE="Deluge"
 CD_DELUGE="Client BitTorrent basé sur Python et GTK+"
 
 CA_DISCORD="Discord"
 CD_DISCORD="Logiciel propriétaire multiplateforme pour communiquer à plusieurs, orienté Gaming"
-FocalFossa
+
 CA_DROPBOX="Dropbox"
 CD_DROPBOX="Partage de fichiers dans le cloud."
 
