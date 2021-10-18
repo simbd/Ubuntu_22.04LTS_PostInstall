@@ -1,5 +1,5 @@
 #!/bin/bash
-## IMPORTANT > Ne pas lancer ce script directement, la post-installation se lance avec le script nommé "PostInstall_Ubuntu-20.04LTS_FocalFossa.sh"
+## IMPORTANT > Ne pas lancer ce script directement, la post-installation se lance avec le script nommé "PostInstall_Ubuntu-22.04LTS_Jammy.sh"
 
 # Configuration suivant la méthode d'installation (apt install, via un ppa, via un snap, via flatpak, etc...)
 DOWNLOAD_DIR="/tmp"
