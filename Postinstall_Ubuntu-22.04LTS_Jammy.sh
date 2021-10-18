@@ -14,7 +14,7 @@ neutre='\e[0;m'
 # Vérification que le script n'est pas lancé directement avec sudo (le script contient déjà les sudos pour les actions lorsque c'est nécessaire)
 if [ "$UID" -eq "0" ]
 then
-    echo -e "${rouge}Merci de ne pas lancer directement ce script avec les droits root : lancez le sans sudo (./Postinstall_Ubuntu-20.04LTS_FF.sh), le mot de passe sera demandé dans le terminal lors de la 1ère action nécessitant le droit administrateur.${neutre}"
+    echo -e "${rouge}Merci de ne pas lancer directement ce script avec les droits root : lancez le sans sudo (./Postinstall_Ubuntu-22.04LTS_Jammy.sh), le mot de passe sera demandé dans le terminal lors de la 1ère action nécessitant le droit administrateur.${neutre}"
     exit
 fi
 
@@ -33,7 +33,7 @@ then
 	f_action_install "$CA_FRENCH" "$(check-language-support -l fr)"
 	f_action_install "$CA_PACKUTILE" "net-tools build-essential gettext curl vim neofetch ncdu ffmpegthumbs ffmpegthumbnailer xterm inxi hdparm cpu-x rsync ppa-purge speedtest-cli"
 	f_action_install "$CA_PACKCODEC" "x264 x265 flac opus-tools vorbis-tools lame mkvtoolnix mkvtoolnix-gui oggvideotools"
-	f_action_install "$CA_GNOMESUPPLEMENT" "chrome-gnome-shell gnome-firmware gnome-tweak-tool gconf-editor gnome-shell-extension-prefs"
+	f_action_install "$CA_GNOMESUPPLEMENT" "chrome-gnome-shell gnome-firmware gnome-tweaks gnome-shell-extension-prefs"
     
     	# Sessions
     	f_action_install "$CA_GNOMEVANILLA" gnome-session
