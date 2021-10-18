@@ -1,7 +1,7 @@
 #!/bin/bash
 #v2.0a
 
-# Script de post-installation pour "Ubuntu 22.04LTS JJ"
+# Script de post-installation pour "Ubuntu 22.04LTS Jammy Jellyfish"
 
 # Code couleur
 rouge='\e[1;31m'
