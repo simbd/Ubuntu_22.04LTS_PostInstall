@@ -123,9 +123,6 @@ CD_MIDORI="Libre & léger mais un peu obsolète maintenant..."
 CA_OPERA="Opera {SNAP}"
 CD_OPERA="Navigateur norvégien, propriétaire, basé sur Chromium"
 
-CA_PALEMOON="Palemoon"
-CD_PALEMOON="Une autre alternative, libre & assez performant"
-
 CA_SRWAREIRON="SRWare Iron"
 CD_SRWAREIRON="Dérivé de Chromium avec des améliorations sur la confidentialité des données"
 
