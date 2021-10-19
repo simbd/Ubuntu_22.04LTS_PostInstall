@@ -41,7 +41,6 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_EDGE" "$CD_EDGE" \
 	$(chkDef "FALSE") "$CA_MIDORI" "$CD_MIDORI" \
     	$(chkDef "FALSE") "$CA_OPERA" "$CD_OPERA" \
-    	$(chkDef "FALSE") "$CA_PALEMOON" "$CD_PALEMOON" \
     	$(chkDef "FALSE") "$CA_SRWAREIRON" "$CD_SRWAREIRON" \
     	$(chkDef "FALSE") "$CA_TORBROWSER" "$CD_TORBROWSER" \
     	$(chkDef "FALSE") "$CA_VIVALDI" "$CD_VIVALDI" \
