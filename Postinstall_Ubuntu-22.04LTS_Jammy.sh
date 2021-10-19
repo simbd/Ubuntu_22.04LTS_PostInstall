@@ -63,7 +63,6 @@ then
 	f_action_get "$CA_EDGE" "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-dev/microsoft-edge-dev_95.0.1020.0-1_amd64.deb"
 	f_action_install "$CA_MIDORI" midori
     	f_action_snap_install "$CA_OPERA" opera
-	f_RepositoryExt_Install "$CA_PALEMOON" "home:stevenpusser" "https://download.opensuse.org/repositories/home:stevenpusser/xUbuntu_19.10/Release.key" "http://download.opensuse.org/repositories/home:/stevenpusser/xUbuntu_19.10/ /" "palemoon"
     	f_action_get "$CA_SRWAREIRON" "http://www.srware.net/downloads/iron64.deb"
     	f_action_install "$CA_TORBROWSER" torbrowser-launcher  
     	f_action_get "$CA_VIVALDI" "https://downloads.vivaldi.com/stable/vivaldi-stable_4.2.2406.48-1_amd64.deb" #(Dépot vivaldi auto-ajouté donc soft toujours à jour)
