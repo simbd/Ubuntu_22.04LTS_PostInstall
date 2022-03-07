@@ -69,14 +69,8 @@ CD_BEAKER="Navigateur opensource qui permet de surfer en P2P"
 CA_BRAVE="Brave"
 CD_BRAVE="Navigateur avec protection pour la vie privée avec blocage des pisteurs"
 
-CA_CHROMIUM="Chromium (stable release) {FLATPAK}"
+CA_CHROMIUM="Chromium (stable release) {SNAP}"
 CD_CHROMIUM="La version libre/opensource de Google Chrome"
-
-CA_CHROMIUMBETA="Chromium Beta (n+1) {PPA}"
-CD_CHROMIUMBETA="Permet d'avoir la plupart du temps 1 version d'avance (et en paquet deb)"
-
-CA_CLIQZ="Cliqz {SNAP}"
-CD_CLIQZ="Fork de Firefox orientés vers la confidentialité des changements avec un moteur de recherche intégré"
 
 CA_DILLO="Dillo"
 CD_DILLO="Navigateur capable de tourner sur des ordinosaures"
@@ -111,10 +105,10 @@ CD_CHROME="Le navigateur (propriétaire) de Google basé sur Chromium"
 CA_LYNX="Lynx"
 CD_LYNX="Ce navigateur s'utilise uniquement en ligne de commande, utile depuis une console SSH"
 
-CA_EDGE="Microsoft Edge (Dev)"
+CA_EDGE="Microsoft Edge (Stable)"
 CD_EDGE="La version linux du navigateur de Microsoft installé par défaut sous Win10"
 
-CA_MIDORI="Midori"
+CA_MIDORI="Midori {SNAP}"
 CD_MIDORI="Libre & léger mais un peu obsolète maintenant..."
 
 #CA_MIN="Min Browser [[ HS : Ne fonctionne pas pour l'instant !! ]]"
@@ -154,9 +148,6 @@ CD_DISCORD="Logiciel propriétaire multiplateforme pour communiquer à plusieurs
 CA_DROPBOX="Dropbox"
 CD_DROPBOX="Partage de fichiers dans le cloud."
 
-CA_DUKTO="Dukto"
-CD_DUKTO="Transfert de fichiers en open source, et multi-plateforme dans le réseau local"
-
 CA_DWSERVICE="DWS Remote Control (agent)"
 CD_DWSERVICE="Permet le contrôle de PC à distance depuis un navigateur web. Libre/gratuit (A lancer manuellemnent)"
 
@@ -172,9 +163,6 @@ CD_EMPATHY="Messagerie instantanée adaptée à Gnome, multi-protocole"
 CA_FILEZILLA="FileZilla"
 CD_FILEZILLA="Logiciel FTP libre et opensource."
 
-CA_FROSTWIRE="Frostwire"
-CD_FROSTWIRE="Client multiplate-forme pour le réseau Gnutella"
-
 CA_GFTP="Gftp"
 CD_GFTP="Client FTP simple et rapide, opensource et utilisant GTK"
 
@@ -184,14 +172,8 @@ CD_GYDL="Permet de télécharger des vidéos Youtube ou juste la piste audio"
 CA_HEXCHAT="Hexchat"
 CD_HEXCHAT="Client IRC, fork de xchat"
 
-CA_HUBIC="Hubic (cli)"
-CD_HUBIC="Partage de fichiers dans le cloud (version 64 bits)."
-
-CA_JAMI="Jami (anciennement Ring)"
-CD_JAMI="Logiciel très performant pour la téléphonie IP"
-
-CA_JITSI="Jitsi"
-CD_JITSI="Anciennement 'SIP Communicator' surtout orienté VoIP"
+CA_JAMI="Jami {SNAP}"
+CD_JAMI="Logiciel très performant pour la téléphonie IP (anciennement Ring)"
 
 CA_KVIRC="KVirc"
 CD_KVIRC="Client IRC graphique multiplate-forme"
