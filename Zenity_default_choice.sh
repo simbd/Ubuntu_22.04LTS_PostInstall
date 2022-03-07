@@ -25,8 +25,6 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
     	$(chkDef "FALSE") "$CA_BEAKER" "$CD_BEAKER" \
     	$(chkDef "FALSE") "$CA_BRAVE" "$CD_BRAVE" \
     	$(chkDef "FALSE") "$CA_CHROMIUM" "$CD_CHROMIUM" \
-	$(chkDef "FALSE") "$CA_CHROMIUMBETA" "$CD_CHROMIUMBETA" \
-    	$(chkDef "FALSE") "$CA_CLIQZ" "$CD_CLIQZ" \
     	$(chkDef "FALSE") "$CA_DILLO" "$CD_DILLO" \
     	$(chkDef "FALSE") "$CA_EOLIE" "$CD_EOLIE" \
     	$(chkDef "FALSE") "$CA_FALKON" "$CD_FALKON" \
@@ -52,7 +50,6 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_GEARY" "$CD_GEARY" \
 	$(chkDef "FALSE") "$CA_HEXCHAT" "$CD_HEXCHAT" \
 	$(chkDef "FALSE") "$CA_JAMI" "$CD_JAMI" \
-	$(chkDef "FALSE") "$CA_JITSI" "$CD_JITSI" \
 	$(chkDef "FALSE") "$CA_KVIRC" "$CD_KVIRC" \
 	$(chkDef "FALSE") "$CA_LINPHONE" "$CD_LINPHONE" \
 	$(chkDef "FALSE") "$CA_MAILSPRING" "$CD_MAILSPRING" \
@@ -78,11 +75,8 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_COZYDRIVE" "$CD_COZYDRIVE" \
 	$(chkDef "FALSE") "$CA_DELUGE" "$CD_DELUGE" \
 	$(chkDef "FALSE") "$CA_DROPBOX" "$CD_DROPBOX" \
-	$(chkDef "FALSE") "$CA_DUKTO" "$CD_DUKTO" \
 	$(chkDef "FALSE") "$CA_EISKALTDC" "$CD_EISKALTDC" \
-	$(chkDef "FALSE") "$CA_FROSTWIRE" "$CD_FROSTWIRE" \
 	$(chkDef "FALSE") "$CA_GYDL" "$CD_GYDL" \
-	$(chkDef "FALSE") "$CA_HUBIC" "$CD_HUBIC" \
 	$(chkDef "FALSE") "$CA_MEGASYNC" "$CD_MEGASYNC" \
 	$(chkDef "FALSE") "$CA_NEXTCLOUD" "$CD_NEXTCLOUD" \
 	$(chkDef "FALSE") "$CA_NICOTINE" "$CD_NICOTINE" \
