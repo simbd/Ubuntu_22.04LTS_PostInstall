@@ -292,9 +292,6 @@ CD_X2GO="Permet de se connecter à distance de façon graphique. Plus léger, op
 CA_X11VNC="X11VNC"
 CD_X11VNC="Pour la prise de contrôle à distance avec le protocole VNC (en reverse)."
 
-CA_XCHAT="Xchat"
-CD_XCHAT="Client IRC graphique libre utilisant GTK"
-
 CA_YTDLND="YouTube Download (cli)"
 CD_YTDLND="Script à utiliser dans le terminal de capture de vidéos en ligne (commande youtube-dl)"
 
@@ -303,16 +300,13 @@ CD_ZOOM="Visioconférence multiplateforme (mais propriétaire) supportant de nom
 
 SCT_OFFICE="______ [[ BUREAUTIQUE ]] ______"
 
-CA_BOOSTNOTE="Boost Note"
-CD_BOOSTNOTE="Editeur de texte fonctionnel et efficace, gère les tags et la coloration syntaxique"
-
 CA_CALIBRE="Calibre"
 CD_CALIBRE="Logiciel de lecture, de gestion de bibliothèques et de conversion de fichiers de type ebook/livre électronique"
 
 CA_CALLIGRA="Calligra Suite"
 CD_CALLIGRA="Suite bureautique de KDE, il s'intègre donc bien avec l'environnement kde/plasma"
 
-CA_CHERRYTREE="CherryTree {SNAP}"
+CA_CHERRYTREE="CherryTree"
 CD_CHERRYTREE="Application de prise de notes hiérarchisées, combinant texte enrichi et marquage automatique de syntaxe"
 
 CA_DRAWIO="Draw.Io {SNAP}"
@@ -333,14 +327,11 @@ CD_FONTFORGE="Editeur libre de polices de caractères numériques gérant la maj
 CA_FREEMIND="FreeMind {SNAP}"
 CD_FREEMIND="Logiciel libre pour créer des cartes heuristiques, des diagrammes de connexions sémantiques"
 
-CA_FREEOFFICE="FreeOffice"
-CD_FREEOFFICE="Suite bureautique propriétaire, gratuite en utilisation privée, nécessite de l'activer"
-
 CA_FREEPLANE="Freeplane"
 CD_FREEPLANE="Création de cartes heuristiques (Mind Map) avec des diagrammes représentant les connexions sémantiques"
 
 CA_GNOMEOFFICE="Gnome Office Pack"
-CD_GNOMEOFFICE="Pack de logiciel bureautique de Gnome : Abiword, Gnumeric, Dia, Planner, Glabels, Glom, Gnucash"
+CD_GNOMEOFFICE="Pack de logiciel bureautique de Gnome : Abiword, Gnumeric, Dia, Planner, Glabels, Gnucash"
 
 CA_GNOTE="Gnote"
 CD_GNOTE="Logiciel de notes écrit en C++ pour avoir accès rapidement/simplement à un ensemble de notes"
@@ -357,9 +348,6 @@ CD_LIBREOFFICEDEPOT="La meilleur suite bureautique, et en plus elle est libre, m
 CA_LIBREOFFICEFRESH="LibreOffice backporté {PPA}"
 CD_LIBREOFFICEFRESH="Permet d'avoir systématiquement la dernière version stable possible de LibreOffice (6.4 => 7.0 etc...)"
 
-CA_OFFICEWEBAPPS="MS Office Web Apps {SNAP}"
-CD_OFFICEWEBAPPS="Appli non-officielle pour se connecter aux logiciels bureautiques online de Microsoft (Office 365)"
-
 CA_LIBREOFFICESUP="Supplément pour LibreOffice"
 CD_LIBREOFFICESUP="Supplément : icones, modèles de documents et clipart, extension Grammalecte activé"
 
@@ -375,9 +363,6 @@ CD_NOTESUP="Editeur et manager de notes avec markdown, simple mais efficace"
 CA_ONLYOFFICE="OnlyOffice {FLATPAK}"
 CD_ONLYOFFICE="Suite bureautique multifonctionnelle intégrée au CRM, avec jeu d'outils de collaboration"
 
-CA_OPENOFFICE="OpenOffice {Script LinInstall}"
-CD_OPENOFFICE="Suite bureautique opensource alternative, moins répendu et moins dynamique que LibreOffice"
-
 CA_PANDOC="Pandoc (cli)"
 CD_PANDOC="Outil permettant de convertir des documents dans différents formats (s'utilise en ligne de commande)"
 
@@ -386,9 +371,6 @@ CD_PDFMOD="Logiciel permettant diverses modifications sur vos PDF"
 
 CA_PDFSAM="PdfSam Basic"
 CD_PDFSAM="Outil pratique pour scinder, fusionner, faire pivoter/mélanger/extraire des pages de fichier PDF"
-
-CA_PDFSHUFFLER="PdfShuffler"
-CD_PDFSHUFFLER="Petit logiciel pour faire des modifs de PDF : supprimer des pages, rogner, tourner etc..."
 
 CA_POLICEMST="Police d'écriture Microsoft"
 CD_POLICEMST="Ajoute les polices d'écriture de Microsoft pour ne pas avoir de déformation de document venant de MO"
@@ -440,15 +422,6 @@ CD_CANTATA="Outil de lecture audio très complet avec gestion de votre audiothè
 CA_CLEMENTINE="Clementine"
 CD_CLEMENTINE="Lecteur audio avec gestion des pochettes, genres musicaux..."
 
-CA_DEEZLOADER="DeezLoader Remix {APPIMAGE}"
-CD_DEEZLOADER="Vous permet de récupérer/télécharger la musique de votre compte Deezer"
-
-CA_DIGIKAM="DigiKam {APPIMAGE}"
-CD_DIGIKAM="Gestion de vos photos. Il peut importer des images depuis des médias et organiser les photos par dossiers"
-
-CA_FLASH="FlashPlayer (bientot abandonné !!)"
-CD_FLASH="Lecture sur le web de vieilles animations/vidéos qui utiliseraient encore l'ancienne techno obsolète 'Flash' sans support d'HTML5"
-
 CA_FONDO="Fondo {FLATPAK}"
 CD_FONDO="Petit utilitaire pour trouver des jolies wallpapers facilement"
 
@@ -472,9 +445,6 @@ CD_MEDIAELCH="Recense vos films/séries/musiques, les identifies et rappatrie le
 
 CA_MOLOTOVTV="Molotov.TV {APPIMAGE}"
 CD_MOLOTOVTV="Service français de distribution de chaînes de TV"
-
-CA_ODIO="Odio {SNAP}"
-CD_ODIO="Permet d'écouter de nombreuses stations de radio à travers le monde (20 000)"
 
 CA_PAROLE="Parole"
 CD_PAROLE="Lecteur multimédia simple d'utilisation qui permet la lecture de CD/DVD et la lecture de fichier audio/vidéo"
@@ -500,7 +470,7 @@ CD_SHOTWELL="Gestionnaire de photos pour Gnome en langage Vala, normalement inst
 CA_SMPLAYER="SmPlayer"
 CD_SMPLAYER="Lecteur basé sur mplayer avec une interface utilisant Qt"
 
-CA_SPOTIFY="Spotify"
+CA_SPOTIFY="Spotify {SNAP}"
 CD_SPOTIFY="Application officielle pour votre compte Spotify (Stream de musique)"
 
 CA_TAUON="Tauon Music Box {FLATPAK}"
@@ -525,9 +495,6 @@ CD_AVIDEMUX="Découpage/Réencodage de vidéo, application des filtres..."
 CA_BLENDER="Blender"
 CD_BLENDER="Suite libre de modélisation 3D, matériaux et textures, d'éclairage, d'animation..."
 
-CA_CINELERRA="Cinelerra-CV [2018]"
-CD_CINELERRA="Montage non-linéaire sophistiqué, équivalent à Adobe première, Final Cut et Sony Vegas"
-
 CA_CURA="Cura (Ultimaker)"
 CD_CURA="Logiciel d'impression 3D qui assure l'agencement, le renforcement, le slicing et la conversion en Gcode"
 
@@ -546,7 +513,7 @@ CD_FLACON="Extraire les pistes d'un gros fichier audio"
 CA_FLAMESHOT="Flameshot"
 CD_FLAMESHOT="Outil de capture d'écran très complet avec de nombreuses possibilités"
 
-CA_FLOWBLADE="Flowblade {FLATPAK}"
+CA_FLOWBLADE="Flowblade"
 CD_FLOWBLADE="Logiciel de montage vidéo multi-piste performant"
 
 CA_FREECAD="Freecad"
@@ -558,7 +525,7 @@ CD_GEARY="Logiciel de messagerie, alternative à Thunderbird et bien intégré �
 CA_GIADA="Giada"
 CD_GIADA="Utilitaire de MAO permettant de créer/enregistrer des boucles, gérant jusqu'à 32 échantillons simultanés"
 
-CA_GIMP="Gimp (version 2.10)"
+CA_GIMP="Gimp (version stable)"
 CD_GIMP="Éditeur d'images bitmap libre et opensource équivalent à Photoshop"
 
 CA_GIMPDEV="Gimp Devel {FLATPAK}"
@@ -576,14 +543,11 @@ CD_HANDBRAKE="Transcodage de n'importe quel fichier vidéo"
 CA_HYDROGEN="Hydrogen"
 CD_HYDROGEN="Synthétiseur de boite à rythme basé sur les patterns avec connexion possible d'un séquenceur externe"
 
-CA_IMCOMPRESSOR="ImCompressor {FLATPAK}"
+CA_IMCOMPRESSOR="Curtail (anciennement ImCompressor) {FLATPAK}"
 CD_IMCOMPRESSOR="Compresseur d'images supportant les formats PNG/JPEG. Supporte avec ou sans perte, avec ou non les métadonnées"
 
 CA_INKSCAPE="Inkscape"
 CD_INKSCAPE="Editeur d'images vectorielles libre et opensource (équivalent à Illustrator)"
-
-# CA_K3D="K-3D"
-# CD_K3D="Animation et modélisation polygonale et modélisation par courbes"
 
 CA_KAZAM="Kazam"
 CD_KAZAM="Logiciel de capture vidéo de votre bureau"
@@ -612,7 +576,7 @@ CD_LILYPOND="Logiciel de notation musicale avec un langage de description de la 
 CA_LIVES="Lives"
 CD_LIVES="Dispose des fonctionnalités d'éditions vidéo/son classique, des filtres et multipiste"
 
-CA_LUMINANCE="Luminance HDR"
+CA_LUMINANCE="Luminance HDR {FLATPAK}"
 CD_LUMINANCE="Logiciel libre de réalisation d'image HDR supportant les formats HDR : OpenEXR, RGBE, Tiff, Raw"
 
 CA_LMMS="LMMS (Lets Make Music Software)"
@@ -636,7 +600,7 @@ CD_MUSESCORE="L'éditeur de partitions de musique le plus utilisé au monde"
 CA_MUSICBRAINZ="MusicBrainz Picard {PPA}"
 CD_MUSICBRAINZ="Logiciel libre multi-plateforme pour tagger les fichiers audio grâce à la base de données MusicBrainz" 
 
-CA_MYPAINT="MyPaint {FLATPAK}"
+CA_MYPAINT="MyPaint"
 CD_MYPAINT="Logiciel de peinture numérique développé en Python"
 
 CA_NATRON="Natron {SNAP}"
@@ -675,7 +639,7 @@ CD_RAWTHERAPEE="Traitement d'images photographiques numériques pour le traiteme
 CA_ROSEGARDEN="Rosegarden"
 CD_ROSEGARDEN="Création musicale avec édition des partitions et peut s'interfacer avec des instruments"
 
-CA_SHOTCUT="Shotcut {SNAP}"
+CA_SHOTCUT="Shotcut"
 CD_SHOTCUT="Editeur de vidéos libre, open source, gratuit et multiplateforme"
 
 CA_SHUTTER="Shutter {PPA}"
