@@ -44,10 +44,7 @@ then
 	# Navigateurs
     	f_action_snap_install "$CA_BEAKER" beaker-browser
     	f_RepositoryExt_Install "$CA_BRAVE" "brave-browser-release" "https://brave-browser-apt-release.s3.brave.com/brave-core.asc" "[arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" "brave-browser"
-    	f_action_flatpak_install "$CA_CHROMIUM" org.chromium.Chromium
-	f_action_exec "$CA_CHROMIUMBETA" "wget https://raw.githubusercontent.com/simbd/ConfigFiles/master/chromium-beta.pref && sudo mv chro*.pref /etc/apt/preferences.d/ && sudo apt update" #(Pour ne pas que le snap prenne le dessus)
-	f_action_ppa_install "$CA_CHROMIUMBETA" ppa:saiarcot895/chromium-beta "chromium-browser"
-    	f_action_snap_install "$CA_CLIQZ" "cliqz --beta"
+    	f_action_snap_install "$CA_CHROMIUM" chromium
     	f_action_install "$CA_DILLO" dillo
     	f_action_flatpak_install "$CA_EOLIE" org.gnome.Eolie
     	f_action_install "$CA_FALKON" falkon
@@ -60,8 +57,8 @@ then
     	f_action_install "$CA_EPIPHANY" epiphany-browser	
     	f_RepositoryExt_Install "$CA_CHROME" "google-chrome" "https://dl-ssl.google.com/linux/linux_signing_key.pub" "[arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" "google-chrome-stable"
     	f_action_install "$CA_LYNX" lynx
-	f_action_get "$CA_EDGE" "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-dev/microsoft-edge-dev_95.0.1020.0-1_amd64.deb"
-	f_action_install "$CA_MIDORI" midori
+	f_action_get "$CA_EDGE" "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_99.0.1150.30-1_amd64.deb"
+	f_action_snap_install "$CA_MIDORI" midori
     	f_action_snap_install "$CA_OPERA" opera
     	f_action_get "$CA_SRWAREIRON" "http://www.srware.net/downloads/iron64.deb"
     	f_action_install "$CA_TORBROWSER" torbrowser-launcher  
@@ -72,24 +69,20 @@ then
     	# (Section re-divisé en 3 parties cf Zenity_default_choice.sh)
     	f_RepositoryExt_Install "$CA_ANYDESK" "anydesk-stable" "https://keys.anydesk.com/repos/DEB-GPG-KEY" "http://deb.anydesk.com/ all main" "anydesk"
     	f_action_install "$CA_CLUSTERSSH" clusterssh
-    	f_action_get_appimage "$CA_COZYDRIVE" "https://github.com/cozy-labs/cozy-desktop/releases/download/v3.20.0/Cozy-Drive-3.20.0-x86_64.AppImage"
+    	f_action_get_appimage "$CA_COZYDRIVE" "https://github.com/cozy-labs/cozy-desktop/releases/download/v3.32.0/Cozy-Drive-3.32.0-x86_64.AppImage"
     	f_action_install "$CA_DELUGE" deluge
 	f_action_get "$CA_DISCORD" "https://dl.discordapp.net/apps/linux/0.0.16/discord-0.0.16.deb"
     	f_action_install "$CA_DROPBOX" nautilus-dropbox
-	f_action_get "$CA_DUKTO" "https://download.opensuse.org/repositories/home:/colomboem/xUbuntu_16.04/amd64/dukto_6.0-1_amd64.deb" #{a reverifier}
     	f_action_exec "$CA_DWSERVICE" "wget https://www.dwservice.net/download/dwagent_x86.sh && chmod +x dwagent* ; mv dwagent* ~/"
     	f_action_install "$CA_EISKALTDC" "eiskaltdcpp eiskaltdcpp-gtk3"
     	f_action_install "$CA_EMPATHY" empathy    
 	f_action_install "$CA_EVOLUTION" evolution
 	f_action_install "$CA_FILEZILLA" filezilla    
-	f_action_get "$CA_FROSTWIRE" "https://prime.frostwire.com/frostwire/6.8.4/frostwire-6.8.4.amd64.deb"
    	f_action_install "$CA_GEARY" geary
 	f_action_install "$CA_GFTP" gftp
    	f_action_snap_install "$CA_GYDL" gydl
 	f_action_install "$CA_HEXCHAT" hexchat  
-	f_action_get "$CA_HUBIC" "http://mir7.ovh.net/ovh-applications/hubic/hubiC-Linux/2.1.0/hubiC-Linux-2.1.0.53-linux.deb"
-	f_action_install "$CA_JAMI" jami
-	f_RepositoryExt_Install "$CA_JITSI" "jitsi-stable" "https://download.jitsi.org/jitsi-key.gpg.key" "https://download.jitsi.org stable/" "jitsi"
+	f_action_snap_install "$CA_JAMI" jami
 	f_action_install "$CA_KVIRC" kvirc
 	f_action_install "$CA_LINPHONE" linphone 
 	f_action_snap_install "$CA_MAILSPRING" mailspring
