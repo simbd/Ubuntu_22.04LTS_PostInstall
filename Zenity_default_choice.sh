@@ -69,7 +69,6 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_WHALEBIRD" "$CD_WHALEBIRD" \
 	$(chkDef "FALSE") "$CA_WHATSDESK" "$CD_WHATSDESK" \
 	$(chkDef "FALSE") "$CA_WIREDESK" "$CD_WIREDESK" \
-	$(chkDef "FALSE") "$CA_XCHAT" "$CD_XCHAT" \
 	$(chkDef "FALSE") "$CA_ZOOM" "$CD_ZOOM" \
 	FALSE "$SCT_DOWNLOAD" "===========================================================" \
 	$(chkDef "FALSE") "$CA_COZYDRIVE" "$CD_COZYDRIVE" \
@@ -103,7 +102,6 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
     	$(chkDef "FALSE") "$CA_X2GO" "$CD_X2GO" \
     	$(chkDef "FALSE") "$CA_X11VNC" "$CD_X11VNC" \
 	FALSE "$SCT_OFFICE" "===========================================================" \
-	$(chkDef "FALSE") "$CA_BOOSTNOTE" "$CD_BOOSTNOTE" \
 	$(chkDef "FALSE") "$CA_CALIBRE" "$CD_CALIBRE" \
 	$(chkDef "FALSE") "$CA_CALLIGRA" "$CD_CALLIGRA" \
 	$(chkDef "FALSE") "$CA_CHERRYTREE" "$CD_CHERRYTREE" \
@@ -113,7 +111,6 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_FEEDREADER" "$CD_FEEDREADER" \
 	$(chkDef "FALSE") "$CA_FONTFORGE" "$CD_FONTFORGE" \
 	$(chkDef "FALSE") "$CA_FREEMIND" "$CD_FREEMIND" \
-	$(chkDef "FALSE") "$CA_FREEOFFICE" "$CD_FREEOFFICE" \
 	$(chkDef "FALSE") "$CA_FREEPLANE" "$CD_FREEPLANE" \
 	$(chkDef "FALSE") "$CA_GNOMEOFFICE" "$CD_GNOMEOFFICE" \
 	$(chkDef "FALSE") "$CA_GNOTE" "$CD_GNOTE" \
@@ -122,16 +119,13 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "TRUE") "$CA_LIBREOFFICEDEPOT" "$CD_LIBREOFFICEDEPOT" \
 	$(chkDef "FALSE") "$CA_LIBREOFFICEFRESH" "$CD_LIBREOFFICEFRESH" \
 	$(chkDef "FALSE") "$CA_LIBREOFFICESUP" "$CD_LIBREOFFICESUP" \
-	$(chkDef "FALSE") "$CA_OFFICEWEBAPPS" "$CD_OFFICEWEBAPPS" \
 	$(chkDef "FALSE") "$CA_MASTERPDFEDITOR" "$CD_MASTERPDFEDITOR" \
 	$(chkDef "FALSE") "$CA_MCOMIX" "$CD_MCOMIX" \
 	$(chkDef "FALSE") "$CA_NOTESUP" "$CD_NOTESUP" \
 	$(chkDef "FALSE") "$CA_ONLYOFFICE" "$CD_ONLYOFFICE" \
-	$(chkDef "FALSE") "$CA_OPENOFFICE" "$CD_OPENOFFICE" \
 	$(chkDef "FALSE") "$CA_PANDOC" "$CD_PANDOC" \
 	$(chkDef "FALSE") "$CA_PDFMOD" "$CD_PDFMOD" \
 	$(chkDef "FALSE") "$CA_PDFSAM" "$CD_PDFSAM" \
-	$(chkDef "FALSE") "$CA_PDFSHUFFLER" "$CD_PDFSHUFFLER" \
 	$(chkDef "TRUE") "$CA_POLICEMST" "$CD_POLICEMST" \
 	$(chkDef "FALSE") "$CA_PROJECTLIBRE" "$CD_PROJECTLIBRE" \
 	$(chkDef "FALSE") "$CA_SCENARI" "$CD_SCENARI" \
@@ -150,9 +144,6 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_CANTATA" "$CD_CANTATA" \
 	$(chkDef "TRUE") "$CA_CELLULOID" "$CD_CELLULOID" \
 	$(chkDef "FALSE") "$CA_CLEMENTINE" "$CD_CLEMENTINE" \
-	$(chkDef "FALSE") "$CA_DEEZLOADER" "$CD_DEEZLOADER" \
-	$(chkDef "FALSE") "$CA_DIGIKAM" "$CD_DIGIKAM" \
-	$(chkDef "FALSE") "$CA_FLASH" "$CD_FLASH" \
 	$(chkDef "FALSE") "$CA_FONDO" "$CD_FONDO" \
 	$(chkDef "FALSE") "$CA_GNOMEMUSIC" "$CD_GNOMEMUSIC" \
 	$(chkDef "FALSE") "$CA_GNOMETWITCH" "$CD_GNOMETWITCH" \
@@ -160,7 +151,6 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_LOLLYPOP" "$CD_LOLLYPOP" \
 	$(chkDef "FALSE") "$CA_MEDIAELCH" "$CD_MEDIAELCH" \
 	$(chkDef "FALSE") "$CA_MOLOTOVTV" "$CD_MOLOTOVTV" \
-	$(chkDef "FALSE") "$CA_ODIO" "$CD_ODIO" \
 	$(chkDef "FALSE") "$CA_PAROLE" "$CD_PAROLE" \
 	$(chkDef "TRUE") "$CA_PAVUCONTROL" "$CD_PAVUCONTROL" \
 	$(chkDef "FALSE") "$CA_QARTE" "$CD_QARTE" \
@@ -203,7 +193,6 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_XNVIEW" "$CD_XNVIEW" \
 	FALSE "$SCT_MONTAGEVIDEO" "===========================================================" \
 	$(chkDef "FALSE") "$CA_AVIDEMUX" "$CD_AVIDEMUX" \
-	$(chkDef "FALSE") "$CA_CINELERRA" "$CD_CINELERRA" \
 	$(chkDef "FALSE") "$CA_FFMPEG" "$CD_FFMPEG" \
 	$(chkDef "FALSE") "$CA_FLOWBLADE" "$CD_FLOWBLADE" \
 	$(chkDef "TRUE") "$CA_HANDBRAKE" "$CD_HANDBRAKE" \
