@@ -123,24 +123,21 @@ then
 	f_action_install "$CA_WORMHOLE" magic-wormhole
 	f_action_install "$CA_X2GO" x2goclient
 	f_action_install "$CA_X11VNC" x11vnc
-	f_action_install "$CA_XCHAT" xchat
 	f_action_install "$CA_YTDLND" youtube-dl
 	f_action_get "$CA_ZOOM" "https://zoom.us/client/latest/zoom_amd64.deb"
 	
 	# Bureautique/Mail
-	f_action_get "$CA_BOOSTNOTE" "https://github.com/BoostIO/boost-releases/releases/download/v0.15.3/boostnote_0.15.3_amd64.deb"
 	f_action_install "$CA_CALIBRE" calibre
 	f_action_install "$CA_CALLIGRA" calligra
-	f_action_snap_install "$CA_CHERRYTREE" cherrytree
+	f_action_install "$CA_CHERRYTREE" cherrytree
 	f_action_snap_install "$CA_DRAWIO" drawio
 	f_action_install "$CA_FRDIC" "myspell-fr-gut wfrench aspell-fr hyphen-fr mythes-fr"
 	f_action_install "$CA_FBREADER" fbreader
 	f_action_install "$CA_FEEDREADER" feedreader
 	f_action_install "$CA_FONTFORGE" "fontforge fontforge-extras"
 	f_action_snap_install "$CA_FREEMIND" freemind
-	f_action_get "$CA_FREEOFFICE" "https://www.softmaker.net/down/softmaker-office-2021_1034-01_amd64.deb"
 	f_action_install "$CA_FREEPLANE" freeplane
-	f_action_install "$CA_GNOMEOFFICE" "abiword gnumeric dia planner glabels glom gnucash"
+	f_action_install "$CA_GNOMEOFFICE" "abiword gnumeric dia planner glabels gnucash"
 	f_action_install "$CA_GNOTE" gnote
 	f_action_install "$CA_GRAMPS" gramps
 	f_action_get_appimage "$CA_JOPLIN" "https://github.com/laurent22/joplin/releases/download/v2.0.11/Joplin-2.0.11.AppImage"
@@ -150,14 +147,11 @@ then
 	f_action_exec "$CA_LIBREOFFICESUP" "wget https://grammalecte.net/grammalecte/oxt/Grammalecte-fr-v2.1.2.oxt --no-check-certificate ; chmod +x Grammalecte*.oxt ; sudo unopkg add --shared Grammalecte*.oxt ; rm Grammalecte*.oxt"
 	f_action_get "$CA_MASTERPDFEDITOR" "https://code-industry.net/public/master-pdf-editor-5.7.90-qt5.x86_64.deb"
 	f_action_install "$CA_MCOMIX" mcomix
-	f_action_snap_install "$CA_OFFICEWEBAPPS" "unofficial-webapp-office"
 	f_action_flatpak_install "$CA_NOTESUP" com.github.philip_scott.notes-up  
 	f_action_flatpak_install "$CA_ONLYOFFICE" org.onlyoffice.desktopeditors
-    	f_action_LinInstall "$CA_OPENOFFICE" OpenOffice
     	f_action_install "$CA_PANDOC" pandoc
     	f_action_install "$CA_PDFMOD" pdfmod
-	f_action_get "$CA_PDFSAM" "https://github.com/torakiki/pdfsam/releases/download/v4.2.6/pdfsam_4.2.6-1_amd64.deb"
-    	f_action_install "$CA_PDFSHUFFLER" pdfshuffler
+	f_action_install "$CA_PDFSAM" pdfsam
     	#f_action_exec "$CA_POLICEMST" "echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo /usr/bin/debconf-set-selections ; sudo apt install ttf-mscorefonts-installer -y"
 	f_action_get "$CA_POLICEMST" "http://ftp.fr.debian.org/debian/pool/contrib/m/msttcorefonts/ttf-mscorefonts-installer_3.8_all.deb"
 	f_action_snap_install "$CA_PROJECTLIBRE" "projectlibre" 
@@ -178,8 +172,6 @@ then
 	f_action_install "$CA_AUDACIOUS" audacious
 	f_action_install "$CA_CANTATA" "cantata mpd"
 	f_action_install "$CA_CLEMENTINE" clementine
-	f_action_get_appimage "$CA_DEEZLOADER" "https://srv-file5.gofile.io/download/r4sZke/Deezloader_Remix_4.3.0-x86_64.AppImage"
-	f_action_install "$CA_FLASH" "adobe-flashplugin pepperflashplugin-nonfree"
 	f_action_flatpak_install "$CA_FONDO" com.github.calo001.fondo
     	f_action_install "$CA_CELLULOID" celluloid
     	f_action_install "$CA_GNOMEMUSIC" gnome-music
@@ -187,7 +179,6 @@ then
 	f_action_install "$CA_LOLLYPOP" lollypop
 	f_action_get_appimage "$CA_MEDIAELCH" "https://github.com/Komet/MediaElch/releases/download/v2.6.4/MediaElch_2.6.4_linux.AppImage"
 	f_action_LinInstall "$CA_MOLOTOVTV" Molotov ##(AppImage récupéré auto par le script)
-	f_action_snap_install "$CA_ODIO" odio
 	f_action_install "$CA_PAROLE" parole
     	f_action_install "$CA_PAVUCONTROL" pavucontrol	
     	f_action_ppa_install "$CA_QARTE" ppa:vincent-vandevyvre/vvv qarte
@@ -197,7 +188,7 @@ then
 	f_action_flatpak_install "$CA_SHORTWAVE" de.haeckerfelix.Shortwave
     	f_action_install "$CA_SHOTWELL" shotwell	
     	f_action_install "$CA_SMPLAYER" "smplayer smplayer-l10n smplayer-themes"	    
-    	f_RepositoryExt_Install "$CA_SPOTIFY" "spotify" "https://download.spotify.com/debian/pubkey.gpg" "http://repository.spotify.com stable non-free" "spotify-client-gnome-support"
+    	f_action_snap_install "$CA_SPOTIFY" spotify
 	f_action_flatpak_install "$CA_TAUON" com.github.taiko2k.tauonmb
 	f_action_install "$CA_VLCSTABLE" "vlc vlc-l10n"
     	f_action_install "$CA_RESTRICT_EXTRA" ubuntu-restricted-extras
@@ -209,16 +200,13 @@ then
 	f_action_install "$CA_AUDACITY" audacity
 	f_action_flatpak_install "$CA_AVIDEMUX" org.avidemux.Avidemux
 	f_action_install "$CA_BLENDER" blender	
-	#f_action_exec "$CA_CINELERRA" "echo 'deb [trusted=yes] https://cinelerra-gg.org/download/pkgs/ub18 bionic main' | sudo tee -a /etc/apt/sources.list.d/cinelerra.list" ##=> pour cinelerra gg erreur libIlmThread-2_2.so.12
-	f_action_ppa_install "$CA_CINELERRA" ppa:cinelerra-ppa/ppa cinelerra-cv #(version de 2018...)
 	f_action_install "$CA_CURA" cura
 	f_action_install "$CA_DARKTABLE" darktable
-	f_action_get_appimage "$CA_DIGIKAM" "https://download.kde.org/stable/digikam/6.4.0/digikam-6.4.0-x86-64.appimage"
 	f_action_install "$CA_EASYTAG" easytag
 	f_action_install "$CA_FFMPEG" ffmpeg
 	f_action_snap_install "$CA_FLACON" flacon-tabetai
 	f_action_install "$CA_FLAMESHOT" flameshot
-	f_action_flatpak_install "$CA_FLOWBLADE" flowblade
+	f_action_install "$CA_FLOWBLADE" flowblade
 	f_action_install "$CA_FREECAD" freecad
 	f_action_install "$CA_GIADA" giada
 	f_action_install "$CA_GIMP" "gimp gimp-help-fr gimp-data-extras"
@@ -228,9 +216,8 @@ then
 	f_action_install "$CA_GTHUMB" gthumb
 	f_action_install "$CA_HANDBRAKE" handbrake
 	f_action_install "$CA_HYDROGEN" hydrogen
-	f_action_flatpak_install "$CA_IMCOMPRESSOR" com.github.huluti.ImCompressor
+	f_action_flatpak_install "$CA_IMCOMPRESSOR" com.github.huluti.Curtail
 	f_action_install "$CA_INKSCAPE" inkscape
-	# f_action_install "$CA_K3D" k3d
 	f_action_install "$CA_KAZAM" kazam	
 	f_action_install "$CA_KDENLIVE" kdenlive		
 	f_action_install "$CA_KOLOURPAINT" kolourpaint	
@@ -240,7 +227,7 @@ then
 	f_action_install "$CA_LIBRECAD" librecad
 	f_action_install "$CA_LILYPOND" lilypond
 	f_action_install "$CA_LIVES" lives	
-	f_action_install "$CA_LUMINANCE" luminance-hdr
+	f_action_flatpak_install "$CA_LUMINANCE" net.sourceforge.qtpfsgui.LuminanceHDR
 	f_action_install "$CA_LMMS" lmms	
 	f_action_install "$CA_MHWAVEEDIT" mhwaveedit
 	f_action_install "$CA_MILKYTRACKER" milkytracker
@@ -248,7 +235,7 @@ then
 	f_action_install "$CA_MIXXX" mixxx
 	f_action_install "$CA_MUSESCORE" musescore3	
 	f_action_ppa_install "$CA_MUSICBRAINZ" ppa:musicbrainz-developers/stable "picard" 
-	f_action_flatpak_install "$CA_MYPAINT" "org.mypaint.MyPaint"	 
+	f_action_install "$CA_MYPAINT" mypaint 
 	f_action_snap_install "$CA_NATRON" natron
 	f_action_install "$CA_OBS" "ffmpeg obs-studio"
 	f_action_install "$CA_OLIVE" olive-editor
@@ -261,7 +248,7 @@ then
 	f_action_get "$CA_PIXELUVO" "http://www.pixeluvo.com/downloads/pixeluvo_1.6.0-2_amd64.deb"
 	f_action_install "$CA_RAWTHERAPEE" rawtherapee
 	f_action_install "$CA_ROSEGARDEN" rosegarden
-	f_action_snap_install "$CA_SHOTCUT" "shotcut --classic"
+	f_action_install "$CA_SHOTCUT" shotcut
 	f_action_ppa_install "$CA_SHUTTER" ppa:linuxuprising/shutter "shutter"
 	f_action_install "$CA_SIMPLESCREENRECORDER" simplescreenrecorder 
 	f_action_install "$CA_SOLVESPACE" solvespace
