@@ -752,7 +752,7 @@ CD_OPTGEO="Logiciel d’optique géométrique libre et opensource"
 CA_PLANNER="Planner"
 CD_PLANNER="Gestionnaire de planning/projets avec diagrammes de Gantt. Alternative à Microsoft Project"
 
-CA_QGIS="Qgis Desktop {FLATPAK}"
+CA_QGIS="Qgis Desktop {FLATPAK}{Nécessite intervention!}"
 CD_QGIS="Créez, éditez, visualisez, analysez et publiez des informations géographiques"
 
 CA_SAGEMATH="SageMath"
