@@ -713,7 +713,7 @@ CD_GCOMPRIS="Suite de logiciels ludo-éducatifs adapté pour les enfants de 2 à
 CA_GELEMENTAL="Gelemental"
 CD_GELEMENTAL="Tableau périodique regroupant de nombreuses informations sur les éléments chimiques"
 
-CA_GEOGEBRA="GeoGebra (dernière version)"
+CA_GEOGEBRA="GeoGebra 6 {FLATPAK}"
 CD_GEOGEBRA="Géométrie dynamique pour manipuler des objets avec un ensemble de fonctions algébriques"
 
 CA_GNOMEMAPS="Gnome Maps (Cartes)"
@@ -758,7 +758,7 @@ CD_SAGEMATH="Alternative opensource aux systèmes de calcul formel Magma, Maple,
 CA_SCILAB="SciLab"
 CD_SCILAB="Logiciel libre de calcul (matriciel) similaire à Matlab ou Octave"
 
-CA_SCRATCH="Scratch 3 Hors-ligne [HTML5 / Depuis un navigateur]"
+CA_SCRATCH="Scratch 3 {FLATPAK}"
 CD_SCRATCH="Language de programmation visuel libre, créé par le MIT, à vocation éducative et ludique"
 
 CA_SKYCHART="SkyChart"
@@ -766,9 +766,6 @@ CD_SKYCHART="Logiciel libre de cartographie céleste"
 
 CA_STELLARIUM="Stellarium"
 CD_STELLARIUM="Planétarium avec l'affichage du ciel réaliste en 3D avec simulation d'un téléscope"
-
-CA_TOUTENCLIC="ToutEnClic"
-CD_TOUTENCLIC="Cahier virtuel pour les enfants étant physiquement dans l’impossibilité d’écrire"
 
 CA_TUXMATH="TuxMath"
 CD_TUXMATH="Logiciel de calcul mental très ludique (sous forme de jeux)"
@@ -793,7 +790,7 @@ CD_DESMUME="Emulateur Nintendo DS"
 CA_DOCKER="Docker"
 CD_DOCKER="Programme libre et connu pour faire de la conteneurisation de logiciels"
 
-CA_DOLPHIN="Dolphin Emulator"
+CA_DOLPHIN="Dolphin Emulator {FLATPAK}"
 CD_DOLPHIN="Projet opensource d'émulateur pour Gamecube et Wii. Emulateur activement développé !"
 
 CA_DOSBOX="Dosbox"
@@ -930,9 +927,6 @@ CD_REDSHIFT="Ajuste la température de couleur de l'écran, fonction déjà incl
 CA_SPEEDCRUNCH="SpeedCrunch"
 CD_SPEEDCRUNCH="Calculatrice scientifique plus évolué en restant simple, efficace et fonctionnelle"
 
-CA_SUBLIM_NAUT="Subliminal pour Nautilus"
-CD_SUBLIM_NAUT="Récupération de sous-titre de manière automatique pour Nautilus"
-
 CA_SUB_EDIT="Subtitle Editor"
 CD_SUB_EDIT="Editeur de fichiers de sous-titre (modification, synchronisation ...)"
 
@@ -1030,9 +1024,6 @@ CD_CISCOVPN="Permet la connexion au VPN Cisco dans NetworkManager (pour Gnome) s
 CA_CRYPTER="Crypter {APPIMAGE}"
 CD_CRYPTER="Permet de chiffrer/déchiffrer des fichiers simplement"
 
-CA_CRYPTOMATOR="Cryptomator {APPIMAGE}"
-CD_CRYPTOMATOR="Programme dédié au stockage chiffré de fichiers sur le cloud"
-
 CA_ENPASS="Enpass Password Manager"
 CD_ENPASS="Coffre-fort pour mdp, cpt bancaire, identité..., chiffrement AES-256 bits"
 
@@ -1066,9 +1057,6 @@ CD_OCSINVENTORY="Installe l'agent pour OCS Inventory (pour être référencé da
 CA_OPENVAS="OpenVAS (cli)"
 CD_OPENVAS="Fork sous licence du scanner de vulnérabilité Nessus qui permet un développement libre"
 
-CA_PGADMIN="PgAdmin3"
-CD_PGADMIN="Interface graphique pour administrer des bases de données PostgreSQL"
-
 CA_PUPPET="Puppet Agent"
 CD_PUPPET="Si vos postes Ubuntu en milieu professionnel sont gérés via Puppet pour le déploiement d'applications."
 
@@ -1077,9 +1065,6 @@ CD_SERVERLAMP="Ajoute 'Apache' comme serveur web, 'MySQL' pour les bases de donn
 
 CA_SIRIKALI="Sirikali"
 CD_SIRIKALI="Interface Qt pour gérer les lecteurs chiffrés ecryptfs, cryfs, encfs, gocryptfs, securefs"
-
-CA_UPM="UPM (Universal Password Manager) {PPA}"
-CD_UPM="Gestionnaire de mots de passe multi-plateforme (écrit en Java)."
 
 CA_VERACRYPT="VeraCrypt {PPA}"
 CD_VERACRYPT="Utilitaire libre utilisé pour le chiffrement, forké sur l'ancien projet TrueCrypt abandonné"
@@ -1112,9 +1097,6 @@ CD_WESNOTH="Jeu de Stratégie, le joueur doit se battre pour retrouver sa place 
 
 CA_BZTAROT="BzTarot"
 CD_BZTAROT="Jeu de tarot sous licence GPL. Permet de jouer à 4 (dont 3 joueurs simulés par ordinateur)"
-
-CA_DOFUS="Dofus (via Ankama Launcher) {APPIMAGE}"
-CD_DOFUS="Ce jeu devra être installé depuis le lanceur d'Ankama, celui-ci est au format AppImage"
 
 CA_EXTREMETUXRACER="Extreme Tux Racer"
 CD_EXTREMETUXRACER="Faites glisser Tux le plus vite possible et ramasser au vol des poissons sur le parcours semé d'embûches"
@@ -1160,9 +1142,6 @@ CD_PINGUS="Clone de Lemmings, vous devrez aider des manchots à traverser des ob
 
 CA_POKERTH="PokerTH"
 CD_POKERTH="Jeu de poker opensource Texas Holdem No Limit jusqu'à 10 participants, humains ou IA"
-
-CA_QUAKE="Quake {SNAP}"
-CD_QUAKE="Pour les nostaligues : le célèbre jeu FPS sortie dans les années 90"
 
 CA_REDECLIPSE="Red Eclipse"
 CD_REDECLIPSE="Jeu de tir subjectif en mode solo et multijoueur basé sur le moteur de jeu Cube Engine 2"
@@ -1321,9 +1300,6 @@ CD_SECURITECPTE="Si vous êtes plusieurs sur le PC, ceci empèche l'accès en le
 CA_BLEACHBIT="BleachBit"
 CD_BLEACHBIT="Outil de nettoyage d'espace disque, de protection de la vie privée et d'optimisation"
 
-CA_DNSFDN="Configuration du DNS de FDN/LDN [ Non Testé !]"
-CD_DNSFDN="Configurer l'usage des DNS de FDN/LDN pour lutter contre la censure"
-
 CA_CONKY="Conky + 1 modèle de config"
 CD_CONKY="Permet d'avoir un panneau d'information sur le bureau, il faudra activer vous-même Conky au démarrage"
 
@@ -1363,14 +1339,8 @@ CD_GRUBATTENTE="Permet de réduire le temps d'attente par défaut (10s) à 2s (+
 CA_DVDREAD="Lecture DVD commerciaux/Blu-Ray {Nécessite intervention !}"
 CD_DVDREAD="Permet de lire les DVD commerciaux chiffrés avec CSS et les Blu-Ray"
 
-CA_LIVEWALLPAPER="LiveWallpaper {PPA}"
-CD_LIVEWALLPAPER="Permet de remplacer le fond d'écran statique par un wallpaper animé (5 plugins par défaut)"
-
 CA_PACKEXTENSION="Pack d'extension Gnome supplémentaire"
-CD_PACKEXTENSION="Ajoute des extensions pour Gnome : DashToPanel, Impatience; Météo, MonitorSystem, Caffeine..."
-
-CA_DASHTODOCK="Extension DashToDock (dernière build)"
-CD_DASHTODOCK="Installera la toute dernière version de l'extension DashToDock depuis Github"
+CD_PACKEXTENSION="Ajoute des extensions pour Gnome : DashToPanel, Impatience; Météo, MonitorSystem, Caffeine, DashToDock..."
 
 CA_PACKICON="Pack d'icones"
 CD_PACKICON="Ajoute des icones pour la customisation : Papirus, Numix, Breeze, GnomeBrave, Elementary, Oxygen"
