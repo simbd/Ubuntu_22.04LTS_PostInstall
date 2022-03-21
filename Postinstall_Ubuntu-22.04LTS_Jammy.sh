@@ -273,7 +273,7 @@ then
 	f_action_get "$CA_FILIUS" "https://www.lernsoftware-filius.de/downloads/Setup/filius_1.9.0_all.deb"
 	f_action_install "$CA_FRITZING" fritzing
 	f_action_get "$CA_GANTTPROJECT" "https://dl.ganttproject.biz/ganttproject-3.1.3102/ganttproject_3.1.3102-1_all.deb"
-	f_action_install "$CA_GCOMPRIS" "gcompris gcompris-qt gcompris-qt-data gnucap"
+	f_action_install "$CA_GCOMPRIS" "gcompris-qt gnucap"
 	f_action_install "$CA_GELEMENTAL" gelemental
 	f_RepositoryExt_Install "$CA_GEOGEBRA" "geogebra" "https://static.geogebra.org/linux/office@geogebra.org.gpg.key" "http://www.geogebra.net/linux/ stable main" "geogebra-classic"
 	f_action_install "$CA_GNOMEMAPS" gnome-maps
