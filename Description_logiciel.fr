@@ -108,9 +108,6 @@ CD_LYNX="Ce navigateur s'utilise uniquement en ligne de commande, utile depuis u
 CA_EDGE="Microsoft Edge (Stable)"
 CD_EDGE="La version linux du navigateur de Microsoft installé par défaut sous Win10"
 
-CA_MIDORI="Midori {SNAP}"
-CD_MIDORI="Libre & léger mais un peu obsolète maintenant..."
-
 #CA_MIN="Min Browser [[ HS : Ne fonctionne pas pour l'instant !! ]]"
 #CD_MIN="Navigateur minimaliste et donc très léger [NE PAS UTILISER => HS]"
 
