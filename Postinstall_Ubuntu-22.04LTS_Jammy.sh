@@ -48,8 +48,10 @@ then
     	f_action_install "$CA_DILLO" dillo
     	f_action_flatpak_install "$CA_EOLIE" org.gnome.Eolie
     	f_action_install "$CA_FALKON" falkon
-	f_action_exec "$CA_FIREFOXDEB" "snap remove firefox"
- 	f_action_install "$CA_FIREFOXDEB" "firefox firefox-locale-fr"
+	f_action_exec "$CA_FIREFOXDEB" "snap remove firefox && apt purge firefox -y"
+ 	f_action_exec "$CA_FIREFOXDEB" "wget https://raw.githubusercontent.com/simbd/ConfigFiles/master/FirefoxNoSnap.pref && sudo mv *.pref /etc/apt/preferences.d/ ; sudo apt update"
+	f_action_exec "$CA_FIREFOXDEB" "sudo add-apt-repository -y ppa:ubuntu-mozilla-security/ppa ; sudo sed -i -e 's/jammy/focal/g' /etc/apt/sources.list.d/ubuntu-mozilla-security-ubuntu-ppa-jammy.list ; sudo apt update"
+	f_action_install "$CA_FIREFOXDEB" "firefox firefox-locale-fr"
    	f_action_ppa_install "$CA_FIREFOXBETA" ppa:mozillateam/firefox-next "firefox firefox-locale-fr"
    	f_action_LinInstall "$CA_FIREFOXDEVELOPER" FirefoxDeveloperEdition
    	f_action_ppa_install "$CA_FIREFOXESR" ppa:mozillateam/ppa "firefox-esr firefox-esr-locale-fr"
@@ -397,9 +399,9 @@ then
 	f_action_get "$CA_KEEWEB" "https://github.com/keeweb/keeweb/releases/download/v1.18.7/KeeWeb-1.18.7.linux.x64.deb"
 	f_action_install "$CA_MALTEGO" openjdk-14-jre #dépendance java nécessaire pour Maltego
 	f_action_get "$CA_MALTEGO" "https://maltego-downloads.s3.us-east-2.amazonaws.com/linux/Maltego.v4.3.0.deb"
-	f_action_get "$CA_MYSQLWB" "https://cdn.mysql.com//Downloads/MySQLGUITools/mysql-workbench-community_8.0.28-1ubuntu21.10_amd64.deb"
+	#f_action_get "$CA_MYSQLWB" "https://cdn.mysql.com//Downloads/MySQLGUITools/mysql-workbench-community_8.0.28-1ubuntu21.10_amd64.deb" #HS
+	f_action_snap_install "$CA_MYSQLWB" mysql-workbench-community
 	f_action_install "$CA_OCSINVENTORY" ocsinventory-agent
-	f_action_install "$CA_OPENVAS" "openvas openvas-scanner"
 	f_action_install "$CA_PUPPET" puppet
 	f_action_install "$CA_SERVERLAMP" "apache2 php libapache2-mod-php mysql-server php-mysql php-curl php-gd php-intl php-json php-mbstring php-xml php-zip phpmyadmin"
 	f_action_install "$CA_SIRIKALI" sirikali
