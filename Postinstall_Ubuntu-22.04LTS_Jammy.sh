@@ -61,7 +61,7 @@ then
     	f_action_snap_install "$CA_OPERA" opera
     	f_action_get "$CA_SRWAREIRON" "http://www.srware.net/downloads/iron64.deb"
     	f_action_install "$CA_TORBROWSER" torbrowser-launcher  
-    	f_action_get "$CA_VIVALDI" "https://downloads.vivaldi.com/stable/vivaldi-stable_4.2.2406.48-1_amd64.deb" #(Dépot vivaldi auto-ajouté donc soft toujours à jour)
+    	f_action_get "$CA_VIVALDI" "https://downloads.vivaldi.com/stable/vivaldi-stable_5.1.2567.66-1_amd64.deb" #(Dépot vivaldi auto-ajouté donc soft toujours à jour)
 	f_action_exec "$CA_VIVALDI" "sudo apt update && sudo apt upgrade vivaldi-stable -y" #Pour que  vivaldi soit à jour dès le départ
 	
     	# Internet / Tchat / Messagerie / Téléchargement / Contrôle à distance
@@ -275,7 +275,7 @@ then
 	f_action_get "$CA_GANTTPROJECT" "https://dl.ganttproject.biz/ganttproject-3.1.3102/ganttproject_3.1.3102-1_all.deb"
 	f_action_install "$CA_GCOMPRIS" "gcompris-qt gnucap"
 	f_action_install "$CA_GELEMENTAL" gelemental
-	f_RepositoryExt_Install "$CA_GEOGEBRA" "geogebra" "https://static.geogebra.org/linux/office@geogebra.org.gpg.key" "http://www.geogebra.net/linux/ stable main" "geogebra-classic"
+	f_action_flatpak_install "$CA_GEOGEBRA" org.geogebra.GeoGebra
 	f_action_install "$CA_GNOMEMAPS" gnome-maps
 	f_action_get "$CA_GOOGLEEARTH" "https://dl.google.com/dl/earth/client/current/google-earth-pro-stable_current_amd64.deb"
 	f_action_exec "$CA_GOOGLEEARTH" "sudo rm -f /etc/apt/sources.list.d/google-earth-pro*" #dépot supprimé car pose soucis systématiquement
@@ -291,12 +291,10 @@ then
 	f_action_flatpak_install "$CA_QGIS" org.qgis.qgis
 	f_action_install "$CA_SAGEMATH" sagemath
 	f_action_install "$CA_SCILAB" scilab
-	f_action_exec "$CA_SCRATCH" "wget http://nux87.free.fr/script-postinstall-ubuntu/theme/scratch.png ; wget https://gitlab.com/simbd/Fichier_de_config/raw/master/scratch.desktop ; wget http://www.ac-grenoble.fr/maths/scratch/scratch.zip ; sudo unzip scratch.zip -d /opt/scratch3 ; rm scratch.zip ; sudo mv scratch.png /usr/share/icons/ ; sudo mv scratch.desktop /usr/share/applications/"
+	f_action_flatpak_install "$CA_SCRATCH" edu.mit.Scratch
 	f_action_install "$CA_SKYCHART" "libgtk2.0-0 libglib2.0-0 libpango1.0-0 libjpeg62 libsqlite3-0" #dépendance pour skychart
 	f_action_exec "$CA_SKYCHART" "echo 'deb [trusted=yes] http://www.ap-i.net/apt stable main' | sudo tee -a /etc/apt/sources.list.d/skychart.list ; sudo apt update ; sudo apt install -y skychart ; sudo rm /etc/apt/sources.list.d/skychart.list"
 	f_action_install "$CA_STELLARIUM" stellarium
-	f_action_install "$CA_TOUTENCLIC" python3-pyqt5
-	f_action_exec "$CA_TOUTENCLIC" "wget http://www.bipede.fr/downloads/logiciels/ToutEnClic.zip ; unzip ToutEnClic.zip ; rm ToutEnClic.zip ; sudo mv ToutEnClic /opt/ ; wget https://gitlab.com/simbd/Fichier_de_config/raw/master/toutenclic.desktop --no-check-certificate ; sudo mv toutenclic.desktop /usr/share/applications/ ; wget http://nux87.free.fr/script-postinstall-ubuntu/theme/toutenclic.png --no-check-certificate ; sudo mv toutenclic.png /usr/share/icons/"
 	f_action_install "$CA_TUXMATH" tuxmath
 	f_action_install "$CA_XCAS" xcas
 	f_action_get "$CA_XEPHEM" "http://e2rd.piekielko.pl/debian/binary-amd64/xephem_3.7.7-4_amd64.deb"
@@ -306,7 +304,7 @@ then
 	f_action_snap_install "$CA_CITRA" "--edge citra-mts"
 	f_action_install "$CA_DESMUME" desmume
 	f_action_install "$CA_DOCKER" "docker.io"
-	f_action_install "$CA_DOLPHIN" dolphin-emu
+	f_action_flatpak_install "$CA_DOLPHIN" org.DolphinEmu.dolphin-emu
 	f_action_install "$CA_DOSBOX" dosbox
 	f_action_get "$CA_GENS" "https://retrocdn.net/images/e/e9/Gens_2.16.8-r7orig_amd64.deb"
 	f_action_install "$CA_GNOMEBOXES" gnome-boxes
@@ -323,13 +321,13 @@ then
 	f_action_install "$CA_VBOXDEPOT" "virtualbox virtualbox-qt virtualbox-ext-pack"
 	f_RepositoryExt_Install "$CA_VBOXLAST" "virtualbox" "http://download.virtualbox.org/virtualbox/debian/oracle_vbox_2016.asc" "[arch=amd64] http://download.virtualbox.org/virtualbox/debian focal contrib" "virtualbox-6.1"
     	f_action_exec "$CA_VBOXLAST" "sudo usermod -G vboxusers -a $USER"
-	f_action_exec "$CA_VMWAREHORIZON" "wget https://download3.vmware.com/software/view/viewclients/CART21FQ2/VMware-Horizon-Client-2006-8.0.0-16522670.x64.bundle && chmod +x VMware*Horizon* && sudo ./VMware-Horizon-Client*.bundle --console ; rm VMware*bundle"
-	f_action_exec "$CA_VMWARE" "sudo apt install gcc -y ; wget https://download3.vmware.com/software/player/file/VMware-Player-16.1.2-17966106.x86_64.bundle && sudo chmod +x VMware-Player*.bundle ; sudo ./VMware-Player-16.1.0-17198959.x86_64.bundle --eulas-agreed --console --required ; sudo rm VMware-Player*"
-	f_action_exec "$CA_VMWAREPRO" "sudo apt install gcc -y ; wget https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-16.1.2-17966106.x86_64.bundle && sudo chmod +x VMware-Workstation*.bundle ; sudo ./VMware-Workstation-Full-16.1.0-17198959.x86_64.bundle --eulas-agreed --console --required ; sudo rm VMware-Workstation*"
+	f_action_exec "$CA_VMWAREHORIZON" "wget https://download3.vmware.com/software/CART23FQ1_LIN64_2111_1/VMware-Horizon-Client-2111.1-8.4.1-19480456.x64.bundle && chmod +x VMware-Horizon-Client-2111.1-8.4.1-19480456.x64.bundle && sudo ./VMware-Horizon-Client-2111.1-8.4.1-19480456.x64.bundle --console --required --eulas-agreed ; rm VMware*bundle"
+	f_action_exec "$CA_VMWAREPRO" "sudo apt install gcc -y ; wget https://download3.vmware.com/software/WKST-1623-LX-New/VMware-Workstation-Full-16.2.3-19376536.x86_64.bundle && sudo chmod +x VMware-Workstation-Full-16.2.3-19376536.x86_64.bundle ; sudo ./VMware-Workstation-Full-16.2.3-19376536.x86_64.bundle --eulas-agreed --console --required ; sudo rm VMware-Workstation-Full*"
+	f_action_exec "$CA_VMWARE" "sudo apt install gcc -y ; wget https://download3.vmware.com/software/WKST-PLAYER-1623-New/VMware-Player-Full-16.2.3-19376536.x86_64.bundle && sudo chmod +x VMware-Player-Full-16.2.3-19376536.x86_64.bundle ; sudo ./VMware-Player-Full-16.2.3-19376536.x86_64.bundle --eulas-agreed --console --required ; sudo rm VMware-Player-Full*"
 	f_action_install "$CA_WINE" "wine-development wine64-development wine64-development-tools winetricks"
 	
 	# Utilitaires graphiques
-	f_action_install "$CA_ACTIONA" "actiona actionaz"
+	f_action_install "$CA_ACTIONA" actiona
 	f_action_exec "$CA_APPOUTLET" "wget https://appoutlet.herokuapp.com/download/deb -O appoutlet.deb ; sudo apt install -y ./appoutlet.deb ; rm appoutlet.deb"
 	f_action_LinInstall "$CA_BITCOINCORE" BitcoinCore
 	f_action_install "$CA_BRASERO" brasero
@@ -355,7 +353,6 @@ then
 	f_action_install "$CA_RECHERCHE" "recoll catfish searchmonkey"
 	f_action_install "$CA_REDSHIFT" redshift-gtk
 	f_action_install "$CA_SPEEDCRUNCH" speedcrunch
-	f_action_exec "$CA_SUBLIM_NAUT" "wget https://raw.githubusercontent.com/Diaoul/nautilus-subliminal/master/install.sh -O - | sudo bash"
 	f_action_install "$CA_SUB_EDIT" subtitleeditor
 	f_action_install "$CA_SYNAPTIC" synaptic
 	f_action_install "$CA_TERMINATOR" terminator
@@ -373,8 +370,7 @@ then
 	f_action_install "$CA_GLANCES" glances
 	f_action_install "$CA_HG" mercurial
 	f_action_install "$CA_IMAGEMAGICK" imagemagick
-	f_action_install "$CA_NIX" curl
-	f_action_exec "$CA_NIX" "curl https://nixos.org/nix/install | sh"
+	f_action_install "$CA_NIX" "curl nix-bin"
 	f_action_install "$CA_PACKRECUP" "testdisk scalpel foremost"
 	f_action_snap_install "$CA_POWERSHELL" "powershell --classic"	
 	f_action_install "$CA_RIPGREP" ripgrep
@@ -392,24 +388,21 @@ then
 	f_action_get "$CA_BUTTERCUP" "https://github.com/buttercup/buttercup-desktop/releases/download/v1.19.0/buttercup-desktop_1.19.0_amd64.deb"
 	f_action_install "$CA_CISCOVPN" "openconnect network-manager-openconnect-gnome"
 	f_action_get_appimage "$CA_CRYPTER" "https://github.com/HR/Crypter/releases/download/v4.0.0/Crypter-4.0.0.AppImage"
-	f_action_get_appimage "$CA_CRYPTOMATOR" "https://dl.bintray.com/cryptomator/cryptomator/1.4.15/cryptomator-1.4.15-x86_64.AppImage"
 	f_RepositoryExt_Install "$CA_ENPASS" "enpass" "https://dl.sinew.in/keys/enpass-linux.key" "http://repo.sinew.in/ stable main" "enpass"
 	f_action_install "$CA_FUSIONINVENTORY" fusioninventory-agent
 	f_action_install "$CA_GUFW" gufw
 	f_action_install "$CA_HACKINGPACK" "tcpdump nmap netdiscover aircrack-ng ophcrack ophcrack-cli crunch john hashcat"
 	f_action_install "$CA_KEEPASS2" keepass2
     	f_action_install "$CA_KEEPASSXC" keepassxc
-	f_action_get "$CA_KEEWEB" "https://github.com/keeweb/keeweb/releases/download/v1.12.3/KeeWeb-1.12.3.linux.x64.deb"
+	f_action_get "$CA_KEEWEB" "https://github.com/keeweb/keeweb/releases/download/v1.18.7/KeeWeb-1.18.7.linux.x64.deb"
 	f_action_install "$CA_MALTEGO" openjdk-14-jre #dépendance java nécessaire pour Maltego
-	f_action_get "$CA_MALTEGO" "https://maltego-downloads.s3.us-east-2.amazonaws.com/linux/Maltego.v4.2.9.12898.deb"
-	f_action_get "$CA_MYSQLWB" "https://cdn.mysql.com//Downloads/MySQLGUITools/mysql-workbench-community_8.0.26-1ubuntu21.04_amd64.deb"
+	f_action_get "$CA_MALTEGO" "https://maltego-downloads.s3.us-east-2.amazonaws.com/linux/Maltego.v4.3.0.deb"
+	f_action_get "$CA_MYSQLWB" "https://cdn.mysql.com//Downloads/MySQLGUITools/mysql-workbench-community_8.0.28-1ubuntu21.10_amd64.deb"
 	f_action_install "$CA_OCSINVENTORY" ocsinventory-agent
-	f_action_install "$CA_OPENVAS" "openvas openvas-cli openvas-manager openvas-scanner"
-	f_action_install "$CA_PGADMIN" pgadmin3
+	f_action_install "$CA_OPENVAS" "openvas openvas-scanner"
 	f_action_install "$CA_PUPPET" puppet
 	f_action_install "$CA_SERVERLAMP" "apache2 php libapache2-mod-php mysql-server php-mysql php-curl php-gd php-intl php-json php-mbstring php-xml php-zip phpmyadmin"
 	f_action_install "$CA_SIRIKALI" sirikali
-	f_action_ppa_install "$CA_UPM" ppa:adriansmith/upm upm
 	f_action_ppa_install "$CA_VERACRYPT" ppa:unit193/encryption veracrypt
 	f_action_install "$CA_WAKEONLAN" wakeonlan
 	f_action_install "$CA_WIFITE" "wifite hashcat hcxdumptool macchanger"
@@ -423,7 +416,6 @@ then
 	f_action_install "$CA_ASSAULTCUBE" assaultcube
 	f_action_install "$CA_WESNOTH" wesnoth
 	f_action_get "$CA_BZTAROT" "http://vbeuselinck.free.fr/linux/bztarot_1.02-12_i386.deb"
-	f_action_get_appimage "$CA_DOFUS" "https://ankama.akamaized.net/zaap/installers/production/Ankama%20Launcher-Setup-x86_64.AppImage"
 	f_action_install "$CA_EXTREMETUXRACER" extremetuxracer
 	f_action_install "$CA_FLIGHTGEAR" flightgear
 	f_action_install "$CA_FROZENBUBBLE" frozen-bubble
@@ -439,7 +431,6 @@ then
 	f_action_install "$CA_OPENTTD" "openttd openttd-opensfx"
 	f_action_install "$CA_PINGUS" pingus
 	f_action_install "$CA_POKERTH" pokerth
-	f_action_snap_install "$CA_QUAKE" quake-shareware
 	f_action_install "$CA_REDECLIPSE" redeclipse
 	f_action_install "$CA_RUNESCAPE" runescape
 	f_action_install "$CA_SAUERBRATEN" sauerbraten
@@ -469,7 +460,7 @@ then
 	f_action_install "$CA_GEANY" "geany geany-plugins"
 	f_action_install "$CA_IDLE" "idle3 idle3-tools"
 	f_action_snap_install "$CA_INTELLIJIDEA" "intellij-idea-community --classic"
-	f_action_install "$CA_IPYTHON" ipython
+	f_action_install "$CA_IPYTHON" ipython3
 	f_action_exec "$CA_JAVA" "sudo add-apt-repository -y ppa:linuxuprising/java"
 	f_action_exec "$CA_JAVA" "echo oracle-java17-installer shared/accepted-oracle-license-v1-2 select true | sudo /usr/bin/debconf-set-selections"
 	f_action_install "$CA_JAVA" oracle-java16-installer
@@ -500,7 +491,6 @@ then
 	f_action_install "$CA_IMPRIMANTE" "hplip hplip-doc hplip-gui sane sane-utils"
 	f_action_exec "$CA_SECURITECPTE" "sudo chmod -R o=- /home/$USER"
 	f_action_install "$CA_BLEACHBIT" bleachbit
-	f_action_exec "$CA_DNSFDN" choice_dnsfdn
 	f_action_exec "$CA_CONKY" "wget https://raw.githubusercontent.com/simbd/ConfigFiles/master/.conkyrc && mv .conkyrc ~/ ; sudo apt install conky -y"
     	f_action_exec "$CA_APPORTOFF" "sudo sed -i 's/^enabled=1$/enabled=0/' /etc/default/apport"
 	f_action_exec "$CA_ATTENTERESEAUOFF" "sudo systemctl disable systemd-networkd-wait-online.service"
@@ -514,13 +504,10 @@ then
 	f_action_exec "$CA_GRUBDEFAULT" "sudo sed -ri 's/GRUB_DEFAULT=0/GRUB_DEFAULT="saved"/g' /etc/default/grub ; echo 'GRUB_SAVEDEFAULT="true"' | sudo tee -a /etc/default/grub ; sudo update-grub"
 	f_action_exec "$CA_GRUBATTENTE" "sudo sed -ri 's/GRUB_TIMEOUT=10/GRUB_TIMEOUT=2/g' /etc/default/grub ; sudo mkdir /boot/old ; sudo mv /boot/memtest86* /boot/old/ ; sudo update-grub"
 	f_action_exec "$CA_DVDREAD" "sudo apt install libdvdcss2 libdvd-pkg libbluray2 -y ; sudo dpkg-reconfigure libdvd-pkg"
-	f_action_get "$CA_LIVEWALLPAPER" "http://fr.archive.ubuntu.com/ubuntu/pool/universe/g/glew/libglew2.0_2.0.0-5_amd64.deb" # Dépendance nécessaire pour livewallpaper
-	f_action_ppa_install "$CA_LIVEWALLPAPER" ppa:fyrmir/livewallpaper-daily "livewallpaper livewallpaper-config livewallpaper-indicator"
-	f_action_install "$CA_PACKEXTENSION" "chrome-gnome-shell gnome-shell-extension-caffeine gnome-shell-extension-dash-to-panel gnome-shell-extension-impatience gnome-shell-extension-weather" #gnome-shell-extension-dashtodock
+	f_action_install "$CA_PACKEXTENSION" "chrome-gnome-shell gnome-shell-extension-dash-to-panel gnome-shell-extension-impatience gnome-shell-extension-dashtodock"
 	f_action_install "$CA_PACKEXTENSION" "gnome-shell-extension-system-monitor gnome-shell-extension-arc-menu gnome-shell-extension-gamemode gnome-shell-extension-gsconnect gnome-shell-extension-xrdesktop"
-	f_action_exec "$CA_DASHTODOCK" "wget https://raw.githubusercontent.com/simbd/Scripts_divers/master/DashToDock_Git.sh && chmod +x DashToDock_Git.sh ; ./DashToDock_Git.sh ; rm DashTo*.sh" 
 	f_action_install "$CA_PACKICON" "papirus-icon-theme numix-icon-theme numix-icon-theme-circle breeze-icon-theme gnome-brave-icon-theme elementary-icon-theme oxygen-icon-theme"
-	f_action_install "$CA_PACKTHEME" "arc-theme numix-blue-gtk-theme numix-gtk-theme materia-gtk-theme yuyo-gtk-theme human-theme"
+	f_action_install "$CA_PACKTHEME" "arc-theme numix-gtk-theme materia-gtk-theme yuyo-gtk-theme human-theme"
 	f_action_install "$CA_INTEL" intel-microcode
 	f_action_ppa_install "$CA_NVIDIA_BP" ppa:graphics-drivers/ppa "nvidia-graphics-drivers-440 nvidia-settings nvidia-prime"
 	f_action_install "$CA_NVIDIA_BP" "libvdpau vulkan-loader vulkan-tools mesa-utils glmark2" # Autres paquets utiles
