@@ -37,7 +37,6 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
     	$(chkDef "FALSE") "$CA_CHROME" "$CD_CHROME" \
     	$(chkDef "FALSE") "$CA_LYNX" "$CD_LYNX" \
 	$(chkDef "FALSE") "$CA_EDGE" "$CD_EDGE" \
-	$(chkDef "FALSE") "$CA_MIDORI" "$CD_MIDORI" \
     	$(chkDef "FALSE") "$CA_OPERA" "$CD_OPERA" \
     	$(chkDef "FALSE") "$CA_SRWAREIRON" "$CD_SRWAREIRON" \
     	$(chkDef "FALSE") "$CA_TORBROWSER" "$CD_TORBROWSER" \
@@ -260,7 +259,6 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_SCRATCH" "$CD_SCRATCH" \
 	$(chkDef "FALSE") "$CA_SKYCHART" "$CD_SKYCHART" \
 	$(chkDef "FALSE") "$CA_STELLARIUM" "$CD_STELLARIUM" \
-	$(chkDef "FALSE") "$CA_TOUTENCLIC" "$CD_TOUTENCLIC" \
 	$(chkDef "FALSE") "$CA_TUXMATH" "$CD_TUXMATH" \
 	$(chkDef "FALSE") "$CA_XCAS" "$CD_XCAS" \
 	$(chkDef "FALSE") "$CA_XEPHEM" "$CD_XEPHEM" \
@@ -315,7 +313,6 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_RECHERCHE" "$CD_RECHERCHE" \
    	$(chkDef "FALSE") "$CA_REDSHIFT" "$CD_REDSHIFT" \
 	$(chkDef "FALSE") "$CA_SPEEDCRUNCH" "$CD_SPEEDCRUNCH" \
-    	$(chkDef "FALSE") "$CA_SUBLIM_NAUT" "$CD_SUBLIM_NAUT" \
     	$(chkDef "FALSE") "$CA_SUB_EDIT" "$CD_SUB_EDIT" \
     	$(chkDef "TRUE") "$CA_SYNAPTIC" "$CD_SYNAPTIC" \
     	$(chkDef "FALSE") "$CA_TERMINATOR" "$CD_TERMINATOR" \
@@ -349,7 +346,6 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_BUTTERCUP" "$CD_BUTTERCUP" \
 	$(chkDef "FALSE") "$CA_CISCOVPN" "$CD_CISCOVPN" \
 	$(chkDef "FALSE") "$CA_CRYPTER" "$CD_CRYPTER" \
-	$(chkDef "FALSE") "$CA_CRYPTOMATOR" "$CD_CRYPTOMATOR" \
 	$(chkDef "FALSE") "$CA_ENPASS" "$CD_ENPASS" \
 	$(chkDef "FALSE") "$CA_FUSIONINVENTORY" "$CD_FUSIONINVENTORY" \
 	$(chkDef "FALSE") "$CA_GUFW" "$CD_GUFW" \
@@ -361,11 +357,9 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_MYSQLWB" "$CD_MYSQLWB" \
 	$(chkDef "FALSE") "$CA_OCSINVENTORY" "$CD_OCSINVENTORY" \
 	$(chkDef "FALSE") "$CA_OPENVAS" "$CD_OPENVAS" \
-	$(chkDef "FALSE") "$CA_PGADMIN" "$CD_PGADMIN" \
 	$(chkDef "FALSE") "$CA_PUPPET" "$CD_PUPPET" \
 	$(chkDef "FALSE") "$CA_SERVERLAMP" "$CD_SERVERLAMP" \
 	$(chkDef "FALSE") "$CA_SIRIKALI" "$CD_SIRIKALI" \
-	$(chkDef "FALSE") "$CA_UPM" "$CD_UPM" \
 	$(chkDef "FALSE") "$CA_VERACRYPT" "$CD_VERACRYPT" \
 	$(chkDef "FALSE") "$CA_WAKEONLAN" "$CD_WAKEONLAN" \
 	$(chkDef "FALSE") "$CA_WIFITE" "$CD_WIFITE" \
@@ -377,7 +371,6 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_ASSAULTCUBE" "$CD_ASSAULTCUBE" \
 	$(chkDef "FALSE") "$CA_WESNOTH" "$CD_WESNOTH" \
 	$(chkDef "FALSE") "$CA_BZTAROT" "$CD_BZTAROT" \
-	$(chkDef "FALSE") "$CA_DOFUS" "$CD_DOFUS" \
 	$(chkDef "FALSE") "$CA_EXTREMETUXRACER" "$CD_EXTREMETUXRACER" \
 	$(chkDef "FALSE") "$CA_FLIGHTGEAR" "$CD_FLIGHTGEAR" \
 	$(chkDef "FALSE") "$CA_FROZENBUBBLE" "$CD_FROZENBUBBLE" \
@@ -393,7 +386,6 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_OPENTTD" "$CD_OPENTTD" \
 	$(chkDef "FALSE") "$CA_PINGUS" "$CD_PINGUS" \
 	$(chkDef "FALSE") "$CA_POKERTH" "$CD_POKERTH" \
-	$(chkDef "FALSE") "$CA_QUAKE" "$CD_QUAKE" \
 	$(chkDef "FALSE") "$CA_REDECLIPSE" "$CD_REDECLIPSE" \
 	$(chkDef "FALSE") "$CA_RUNESCAPE" "$CD_RUNESCAPE" \
 	$(chkDef "FALSE") "$CA_SAUERBRATEN" "$CD_SAUERBRATEN" \
@@ -448,7 +440,6 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_SECURITECPTE" "$CD_SECURITECPTE" \
 	$(chkDef "FALSE") "$CA_BLEACHBIT" "$CD_BLEACHBIT" \
 	$(chkDef "FALSE") "$CA_CONKY" "$CD_CONKY" \
-	$(chkDef "FALSE") "$CA_DNSFDN" "$CD_DNSFDN" \
 	$(chkDef "TRUE") "$CA_APPORTOFF" "$CD_APPORTOFF" \
 	$(chkDef "FALSE") "$CA_ATTENTERESEAUOFF" "$CD_ATTENTERESEAUOFF" \
 	$(chkDef "FALSE") "$CA_EXTINCTIONAUTO" "$CD_EXTINCTIONAUTO" \
@@ -462,9 +453,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_GRUBDEFAULT" "$CD_GRUBDEFAULT" \
 	$(chkDef "FALSE") "$CA_GRUBATTENTE" "$CD_GRUBATTENTE" \
 	$(chkDef "FALSE") "$CA_DVDREAD" "$CD_DVDREAD" \
-	$(chkDef "FALSE") "$CA_LIVEWALLPAPER" "$CD_LIVEWALLPAPER" \
 	$(chkDef "FALSE") "$CA_PACKEXTENSION" "$CD_PACKEXTENSION" \
-	$(chkDef "FALSE") "$CA_DASHTODOCK" "$CD_DASHTODOCK" \
 	$(chkDef "TRUE") "$CA_PACKICON" "$CD_PACKICON" \
 	$(chkDef "TRUE") "$CA_PACKTHEME" "$CD_PACKTHEME" \
 	$(chkDef "FALSE") "$CA_INTEL" "$CD_INTEL" \
