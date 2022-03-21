@@ -58,7 +58,6 @@ then
     	f_RepositoryExt_Install "$CA_CHROME" "google-chrome" "https://dl-ssl.google.com/linux/linux_signing_key.pub" "[arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" "google-chrome-stable"
     	f_action_install "$CA_LYNX" lynx
 	f_action_get "$CA_EDGE" "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_99.0.1150.30-1_amd64.deb"
-	f_action_snap_install "$CA_MIDORI" midori
     	f_action_snap_install "$CA_OPERA" opera
     	f_action_get "$CA_SRWAREIRON" "http://www.srware.net/downloads/iron64.deb"
     	f_action_install "$CA_TORBROWSER" torbrowser-launcher  
