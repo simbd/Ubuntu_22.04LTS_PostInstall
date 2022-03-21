@@ -342,11 +342,11 @@ CD_GRAMPS="Logiciel libre et multiplateforme de gestion/recherche généalogique
 CA_JOPLIN="Joplin {APPIMAGE}"
 CD_JOPLIN="Saisie de notes et listes de choses à faire"
 
-CA_LIBREOFFICEDEPOT="LibreOffice 6.4 (version des dépots)"
+CA_LIBREOFFICEDEPOT="LibreOffice 7.3 (version des dépots)"
 CD_LIBREOFFICEDEPOT="La meilleur suite bureautique, et en plus elle est libre, multi-plateforme et gratuite (version 6.4.x)"
 
 CA_LIBREOFFICEFRESH="LibreOffice backporté {PPA}"
-CD_LIBREOFFICEFRESH="Permet d'avoir systématiquement la dernière version stable possible de LibreOffice (6.4 => 7.0 etc...)"
+CD_LIBREOFFICEFRESH="Permet d'avoir systématiquement la dernière version stable possible de LibreOffice"
 
 CA_LIBREOFFICESUP="Supplément pour LibreOffice"
 CD_LIBREOFFICESUP="Supplément : icones, modèles de documents et clipart, extension Grammalecte activé"
