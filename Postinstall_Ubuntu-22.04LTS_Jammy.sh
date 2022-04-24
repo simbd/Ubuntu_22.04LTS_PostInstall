@@ -48,7 +48,7 @@ then
     	f_action_install "$CA_DILLO" dillo
     	f_action_flatpak_install "$CA_EOLIE" org.gnome.Eolie
     	f_action_install "$CA_FALKON" falkon
-	f_action_exec "$CA_FIREFOXDEB" "snap remove firefox && apt purge firefox -y"
+	f_action_exec "$CA_FIREFOXDEB" "snap remove firefox && apt purge firefox -y ; sudo apt purge firefox -y"
  	f_action_exec "$CA_FIREFOXDEB" "wget https://raw.githubusercontent.com/simbd/ConfigFiles/master/FirefoxNoSnap.pref && sudo mv *.pref /etc/apt/preferences.d/ ; sudo apt update"
 	f_action_exec "$CA_FIREFOXDEB" "sudo add-apt-repository -y ppa:ubuntu-mozilla-security/ppa ; sudo sed -i -e 's/jammy/focal/g' /etc/apt/sources.list.d/ubuntu-mozilla-security-ubuntu-ppa-jammy.list ; sudo apt update"
 	f_action_install "$CA_FIREFOXDEB" "firefox firefox-locale-fr"
