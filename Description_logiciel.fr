@@ -340,7 +340,7 @@ CA_JOPLIN="Joplin {APPIMAGE}"
 CD_JOPLIN="Saisie de notes et listes de choses à faire"
 
 CA_LIBREOFFICEDEPOT="LibreOffice 7.3 (version des dépots)"
-CD_LIBREOFFICEDEPOT="La meilleur suite bureautique, et en plus elle est libre, multi-plateforme et gratuite (version 6.4.x)"
+CD_LIBREOFFICEDEPOT="La meilleur suite bureautique, et en plus elle est libre, multi-plateforme et gratuite"
 
 CA_LIBREOFFICEFRESH="LibreOffice backporté {PPA}"
 CD_LIBREOFFICEFRESH="Permet d'avoir systématiquement la dernière version stable possible de LibreOffice"
